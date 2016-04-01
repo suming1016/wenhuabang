@@ -1,0 +1,208 @@
+body{padding-bottom:6.125rem;position: relative;padding-top:5.5rem}
+[data-dpr="2"]body{padding-bottom: 12.25rem;padding-top:11rem;}
+[data-dpr="2"]body{padding-bottom: 18.375rem;padding-top:16.5rem;}
+/*导航条*/
+
+.recommend_title{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:5.5rem;
+    font-family: "苹方 中等", sans-serif;
+    font-size: 20px;
+    background-color: #46b0d5;
+    color:#fff;
+    text-align: center;
+    line-height: 5.5rem;
+}
+[data-dpr="2"].bottom_nav{padding-bottom:2rem;}
+[data-dpr="2"].recommend_title{height: 11rem;font-size:40px;line-height: 11rem;}
+[data-dpr="3"].bottom_nav{padding-bottom:3rem;}
+[data-dpr="3"].recommend_title{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
+/*项目列表*/
+.recommend_list{
+    overflow: hidden;
+    border-bottom: solid 1px #c7c7cc;
+    padding-bottom:1rem;
+    }
+
+    /*标题*/
+    .recommend_list_title{
+        padding: 1rem;
+            }
+    .recommend_list_title a{
+        font-family: "苹方 中等", sans-serif;
+        font-size: 18px;
+        color: #323232;
+        display: block;
+        /*width:100px;*/
+        overflow:hidden;
+        text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+        -o-text-overflow:ellipsis;/* Opera 9-10 */
+        -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+        white-space: nowrap;
+    }
+    [data-dpr="2"].recommend_list_title{padding: 2rem;}
+    [data-dpr="2"].recommend_list_title a{font-size: 36px;}
+    [data-dpr="3"].recommend_list_title{padding: 3rem;}
+    [data-dpr="2"].recommend_list_title a{font-size: 54px;}
+    /*项目类别、金额、图片*/
+    .recommend_list_decoration{overflow: hidden;margin:0 1rem;}
+    .recommend_list_decoration div{font-family: "苹方 常规", sans-serif;font-size:12px;color:#999;}
+    .recommend_list_decoration .province,.city,.category,.mode{float:left;margin-right: 1rem;}
+    .recommend_list_decoration .price{float:right;}
+    .recommend_list_images{
+        margin:1rem;height: 17.5rem;
+        overflow: hidden;
+        border-radius: 2px;
+        -moz-border-radius: 2px;/*firefox*/
+        -webkit-border-radius: 2px;/*Safari and Chrome*/
+        -ms-border-radius: 2px;/*IE*/
+        -o-border-radius: 2px;/*Opera*/
+    }
+    .recommend_list_images_windows{height: 17.5rem;}
+    .recommend_list_images_windows a{display:block;width:100%;height:100%;}
+    .recommend_list_images_windows a img{width:100%;height:100%;}
+    [data-dpr="2"].recommend_list_decoration{margin:0 2rem;}
+    [data-dpr="2"].recommend_list_decoration div{font-size:24px;}
+    [data-dpr="2"].recommend_list_decoration .province,.city,.category,.mode{margin-right: 2rem;}
+    [data-dpr="2"].recommend_list_images{margin:2rem;height: 35rem;
+        border-radius: 4px;
+        -moz-border-radius: 4px;/*firefox*/
+        -webkit-border-radius: 4px;/*Safari and Chrome*/
+        -ms-border-radius: 4px;/*IE*/
+        -o-border-radius: 4px;/*Opera*/
+    }
+    [data-dpr="2"].recommend_list_images_windows{height: 35rem;}
+    [data-dpr="3"].recommend_list_decoration{margin:0 3rem;}
+    [data-dpr="3"].recommend_list_decoration div{font-size:36px;}
+    [data-dpr="3"].recommend_list_decoration .province,.city,.category,.mode{margin-right: 3rem;}
+    [data-dpr="3"].recommend_list_images{margin:3rem;height: 52.5rem;
+        border-radius: 6px;
+        -moz-border-radius: 6px;/*firefox*/
+        -webkit-border-radius: 6px;/*Safari and Chrome*/
+        -ms-border-radius: 6px;/*IE*/
+        -o-border-radius: 6px;/*Opera*/
+}
+    [data-dpr="2"].recommend_list_images_windows{height: 52.5rem;}
+    /*时间分享*/
+    .recommend_list_time{margin:0 1rem;overflow: hidden;display: block;}
+    .recommend_list_time .time{
+        float:left;color:#999;
+        font-family: "苹方 常规", sans-serif;
+        font-size:12px;
+        padding-left:26px;
+        line-height: 18px;
+        background: url("../HTML/images/time.png") no-repeat left top;
+    }
+    .recommend_list_time .collection{
+        float:right;
+        width: 2rem;
+        height:2rem;
+        background: url("../HTML/images/collection.png") no-repeat left top;
+    }
+    .recommend_list_time .share{
+        margin-right:1rem;
+        float:right;
+        width: 2rem;
+        height:2rem;
+        background: url("../HTML/images/share.png") no-repeat left top;
+    }
+    .recommend_list_time .share a{display:block;width:100%;height:100%;}
+    .recommend_list_time .collection a{display:block;width:100%;height:100%;}
+    [data-dpr="2"].recommend_list_time{margin:0 2rem;}
+    [data-dpr="2"].recommend_list_time .time{
+        font-size:24px;
+        padding-left:42px;
+        line-height: 32px;
+        background-image: url("../HTML/images/time@2x.png");
+    }
+    [data-dpr="2"].recommend_list_time .collection{
+        width: 4rem;
+        height:4rem;
+        background: url("../HTML/images/collection@2x.png") no-repeat left top;
+    }
+    [data-dpr="2"].recommend_list_time .share{
+        margin-right:2rem;
+        width: 4rem;
+        height:4rem;
+        background: url("../HTML/images/share@2x.png") no-repeat left top;
+    }
+    [data-dpr="3"].recommend_list_time{margin:0 3rem;}
+    [data-dpr="3"].recommend_list_time .time{
+        font-size:36px;
+        padding-left:58px;
+        line-height: 48px;
+        background-image: url("../HTML/images/time@3x.png");
+    }
+[data-dpr="3"].recommend_list_time .collection{
+
+    width: 6rem;
+    height:6rem;
+    background: url("../HTML/images/collection@3x.png") no-repeat left top;
+}
+    [data-dpr="3"].recommend_list_time .share{
+    margin-right:3rem;
+    width:6rem;
+    height:6rem;
+    background: url("../HTML/images/share@3x.png") no-repeat left top;
+    }
+/*底部导航*/
+.bottom_nav{
+    position:fixed;
+    left:0;
+    bottom:0;
+    height:6.125rem;
+    width: 100%;
+    }
+.bottom_nav dd{
+    width:25%;
+    float: left;
+
+    /*box-sizing:border-box;!*Internet Explorer、Opera 以及 Chrome *!*/
+    /*-moz-box-sizing:border-box; !* Firefox *!*/
+    /*-webkit-box-sizing:border-box; !* Safari *!*/
+}
+.bottom_nav dd a{
+    display:block;
+    width:100%;height:100%;
+    color: #ffffff;
+    text-align: center;
+    line-height:14px;
+    padding-top:3.75rem;
+    padding-bottom:0.625rem;
+}
+.bottom_nav .recommend a{color:#46b0d5;
+    border-right: #fff dashed 1px;
+    background:#c7c7cc url("../HTML/images/recommend_selected.png") no-repeat center 1rem;
+}
+.bottom_nav .project_list a{
+    border-right: #fff dashed 1px;
+    background:#c7c7cc url("../HTML/images/project_list.png") no-repeat center 1rem;
+}
+.bottom_nav .project_publish a{
+    border-right: #fff dashed 1px;
+     background:#c7c7cc url("../HTML/images/project_publish.png") no-repeat center 1rem;
+ }
+.bottom_nav .me a{
+    background:#c7c7cc url("./../HTML/images/me.png") no-repeat center 1rem;
+  }
+[data-dpr="2"].bottom_nav{height:12.25rem;}
+[data-dpr="2"].bottom_nav dd a{padding-top:7.5rem;padding-bottom:1.25rem;}
+[data-dpr="2"].bottom_nav .recommend a{border-right: #fff dashed 2px;
+    background:#c7c7cc url("../HTML/images/recommend_selected@2x.png") no-repeat center 2rem;}
+[data-dpr="2"].bottom_nav .project_list a{border-right: #fff dashed 2px;
+    background:#c7c7cc url("../HTML/images/project_list@2x.png") no-repeat center 2rem;}
+[data-dpr="2"].bottom_nav .project_publish a{border-right: #fff dashed 2px;
+    background:#c7c7cc url("../HTML/images/project_publish@2x.png") no-repeat center 2rem;}
+[data-dpr="2"].bottom_nav .me a{background:#c7c7cc url("../HTML/images/me@2x.png") no-repeat center 2rem;}
+[data-dpr="3"].bottom_nav{height:18.375rem;}
+[data-dpr="3"].bottom_nav dd a{padding-top:11.25rem;padding-bottom:1.875rem;}
+[data-dpr="3"].bottom_nav .recommend a{border-right: #fff dashed 3px;
+    background:#c7c7cc url("../HTML/images/recommend_selected@3x.png") no-repeat center 3rem;}
+[data-dpr="3"].bottom_nav .project_list a{border-right: #fff dashed 3px;
+    background:#c7c7cc url("../HTML/images/project_list@3x.png") no-repeat center 3rem;}
+[data-dpr="3"].bottom_nav .project_publish a{border-right: #fff dashed 3px;
+    background:#c7c7cc url("../HTML/images/project_publish@3x.png") no-repeat center 3rem;}
+[data-dpr="3"].bottom_nav .me a{background:#c7c7cc url("../HTML/images/me@3x.png") no-repeat center 3rem;}
