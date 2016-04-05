@@ -14,7 +14,7 @@ body {
                              一旦放大响应的 box 也随之放大，导致页面出现错乱问题，解决方法：定义页面的最小宽度*/
     margin: 0;          /*css reset*/
 /*background-color: #46b0d5;*/
-    background-color:#f2f2f2;
+    background-color:#f8f8f8;
     min-height:100%;
 }
 
