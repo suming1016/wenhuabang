@@ -1,13 +1,32 @@
 /*登录、注册样式*/
-/*登录页图标*/
-.login{width:100%;overflow:hidden;padding:5.5rem 0;}
+/*导航条*/
+.top_nav{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:5.5rem;
+    font-family: "苹方 中等", sans-serif;
+    font-size: 20px;
+    background-color: #46b0d5;
+    color:#fff;
+    text-align: center;
+    line-height: 5.5rem;
+}
+[data-dpr="2"].top_nav{height: 11rem;font-size:40px;line-height: 11rem;}
+[data-dpr="3"].top_nav{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
+
+/*登录*/
+/*图标*/
+.login{width:100%;padding:11rem 0;}
 .app_login_img{
     display:block;
     margin:0 auto 5.5rem;
 }
-[data-dpr="2"].login{padding:11rem 0;}
-[data-dpr="3"].login{padding:16.5rem 0;}
+[data-dpr="2"].login{padding:22rem 0;}
+[data-dpr="3"].login{padding:33rem 0;}
 /*用户名、密码*/
+.useId_box,.password_box{padding-left:6.25rem;border-bottom: 1px solid #46b0d5;}
 .useId,.password{
     width:100%;
     border-radius:0;
@@ -15,18 +34,14 @@
     -webkit-border-radius: 0;/*Safari and Chrome*/
     -ms-border-radius: 0;/*IE*/
     -o-border-radius: 0;/*Opera*/
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 1px solid #46b0d5;
+    border: none;
     height:6.25rem;
-    padding-left:6.25rem;
     font-family: "SF UI Text",sans-serif;
     font-size:16px;
     line-height:3rem;
 }
-.useId{background:#fff url("../HTML/images/account.png") no-repeat 2rem center;}
-.password{background:#fff url("../HTML/images/password.png") no-repeat 2rem center;}
+.useId_box{background:#fff url("../HTML/images/account.png") no-repeat 2rem center;}
+.password_box{background:#fff url("../HTML/images/password.png") no-repeat 2rem center;}
 .password_forget{
     font-family:"苹方 常规", sans-serif;
     font-size:12px;
@@ -35,25 +50,36 @@
 }
 .checkbox{width:1.5rem;height:1.5rem;margin:0.25rem 0.25rem 0.25rem 0;}
 .password_forgot{text-align:right;float:right;display:block;color:#fb2a2f;}
-[data-dpr="2"].useId{
-    height:12.5rem;padding-left:12.5rem;line-height:6rem;border-bottom: 2px solid #46b0d5;
-    font-family: "SF UI Display",sans-serif;font-size:32px;
+[data-dpr="2"].useId_box{padding-left:12.5rem;border-bottom: 2px solid #46b0d5;
     background:url("../HTML/images/account@2x.png") no-repeat 4rem center;
 }
-[data-dpr="2"].password{
-    height:12.5rem;padding-left:12.5rem;line-height:6rem;border-bottom: 2px solid #46b0d5;
+[data-dpr="2"].useId{
+    height:12.5rem;line-height:6rem;
     font-family: "SF UI Display",sans-serif;font-size:32px;
-    background:#fff url("../HTML/images/password@2x.png") no-repeat 4rem center;
 }
-[data-dpr="3"].useId{
-    height:18.75rem;padding-left:18.75rem;line-height:9rem;border-bottom: 3px solid #46b0d5;
-    font-family: "SF UI Display",sans-serif;font-size:48px;
+[data-dpr="2"].password_box{
+    border-bottom: 2px solid #46b0d5;padding-left:12.5rem;
+    background:#fff url("../HTML/images/password@2x.png") no-repeat 4rem center;}
+[data-dpr="2"].password{
+    height:12.5rem;line-height:6rem;
+    font-family: "SF UI Display",sans-serif;font-size:32px;
+
+}
+[data-dpr="3"].useId_box{padding-left:18.75rem;border-bottom: 3px solid #46b0d5;
     background:#fff url("../HTML/images/account@3x.png") no-repeat 6rem center;
 }
-[data-dpr="3"].password{
-    height:18.75rem;padding-left:18.75rem;line-height:9rem;border-bottom: 3px solid #46b0d5;
+[data-dpr="3"].useId{
+    height:18.75rem;line-height:9rem;
     font-family: "SF UI Display",sans-serif;font-size:48px;
+}
+[data-dpr="3"].password_box{
+    padding-left:18.75rem;border-bottom: 3px solid #46b0d5;
     background:#fff url("../HTML/images/password@3x.png") no-repeat 6rem center;
+}
+[data-dpr="3"].password{
+    height:18.75rem;line-height:9rem;
+    font-family: "SF UI Display",sans-serif;font-size:48px;
+
 }
 [data-dpr="2"].password_forget{font-family:"苹方 常规", sans-serif;font-size:24px;padding:2rem 2rem;line-height:5rem;}
 [data-dpr="2"].checkbox{width:3rem;height:3rem;margin:0.5rem 0.5rem 0.5rem 0;}

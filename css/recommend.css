@@ -18,9 +18,7 @@ body{padding-bottom:6.125rem;position: relative;padding-top:5.5rem}
     text-align: center;
     line-height: 5.5rem;
 }
-[data-dpr="2"].bottom_nav{padding-bottom:2rem;}
 [data-dpr="2"].recommend_title{height: 11rem;font-size:40px;line-height: 11rem;}
-[data-dpr="3"].bottom_nav{padding-bottom:3rem;}
 [data-dpr="3"].recommend_title{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
 /*项目列表*/
 .recommend_list{
@@ -177,34 +175,34 @@ body{padding-bottom:6.125rem;position: relative;padding-top:5.5rem}
 }
 .bottom_nav .recommend a{color:#46b0d5;
     border-right: #fff dashed 1px;
-    background:#c7c7cc url("../HTML/images/recommend_selected.png") no-repeat center 1rem;
+    background:#c7c7cc url("../HTML/images/recommend_selected.png") no-repeat center 0.5rem;
 }
 .bottom_nav .project_list a{
     border-right: #fff dashed 1px;
-    background:#c7c7cc url("../HTML/images/project_list.png") no-repeat center 1rem;
+    background:#c7c7cc url("../HTML/images/project_list.png") no-repeat center 0.5rem;
 }
 .bottom_nav .project_publish a{
     border-right: #fff dashed 1px;
-     background:#c7c7cc url("../HTML/images/project_publish.png") no-repeat center 1rem;
+     background:#c7c7cc url("../HTML/images/project_publish.png") no-repeat center 0.5rem;
  }
 .bottom_nav .me a{
-    background:#c7c7cc url("./../HTML/images/me.png") no-repeat center 1rem;
+    background:#c7c7cc url("./../HTML/images/me.png") no-repeat center 0.5rem;
   }
 [data-dpr="2"].bottom_nav{height:12.25rem;}
 [data-dpr="2"].bottom_nav dd a{padding-top:7.5rem;padding-bottom:1.25rem;}
 [data-dpr="2"].bottom_nav .recommend a{border-right: #fff dashed 2px;
-    background:#c7c7cc url("../HTML/images/recommend_selected@2x.png") no-repeat center 2rem;}
+    background:#c7c7cc url("../HTML/images/recommend_selected@2x.png") no-repeat center 1rem;}
 [data-dpr="2"].bottom_nav .project_list a{border-right: #fff dashed 2px;
-    background:#c7c7cc url("../HTML/images/project_list@2x.png") no-repeat center 2rem;}
+    background:#c7c7cc url("../HTML/images/project_list@2x.png") no-repeat center 1rem;}
 [data-dpr="2"].bottom_nav .project_publish a{border-right: #fff dashed 2px;
-    background:#c7c7cc url("../HTML/images/project_publish@2x.png") no-repeat center 2rem;}
-[data-dpr="2"].bottom_nav .me a{background:#c7c7cc url("../HTML/images/me@2x.png") no-repeat center 2rem;}
+    background:#c7c7cc url("../HTML/images/project_publish@2x.png") no-repeat center 1rem;}
+[data-dpr="2"].bottom_nav .me a{background:#c7c7cc url("../HTML/images/me@2x.png") no-repeat center 1rem;}
 [data-dpr="3"].bottom_nav{height:18.375rem;}
 [data-dpr="3"].bottom_nav dd a{padding-top:11.25rem;padding-bottom:1.875rem;}
 [data-dpr="3"].bottom_nav .recommend a{border-right: #fff dashed 3px;
-    background:#c7c7cc url("../HTML/images/recommend_selected@3x.png") no-repeat center 3rem;}
+    background:#c7c7cc url("../HTML/images/recommend_selected@3x.png") no-repeat center 1.5rem;}
 [data-dpr="3"].bottom_nav .project_list a{border-right: #fff dashed 3px;
-    background:#c7c7cc url("../HTML/images/project_list@3x.png") no-repeat center 3rem;}
+    background:#c7c7cc url("../HTML/images/project_list@3x.png") no-repeat center 1.5rem;}
 [data-dpr="3"].bottom_nav .project_publish a{border-right: #fff dashed 3px;
-    background:#c7c7cc url("../HTML/images/project_publish@3x.png") no-repeat center 3rem;}
-[data-dpr="3"].bottom_nav .me a{background:#c7c7cc url("../HTML/images/me@3x.png") no-repeat center 3rem;}
+    background:#c7c7cc url("../HTML/images/project_publish@3x.png") no-repeat center 1.5rem;}
+[data-dpr="3"].bottom_nav .me a{background:#c7c7cc url("../HTML/images/me@3x.png") no-repeat center 1.5rem;}
