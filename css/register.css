@@ -12,6 +12,7 @@
     color:#fff;
     text-align: center;
     line-height: 5.5rem;
+    z-index: 100;
 }
 .return{
     position:absolute;
@@ -28,10 +29,13 @@
 [data-dpr="3"].return{left:6rem;top:4.125rem;width:8.25rem;height:8.25rem;background:url("../HTML/images/back_arrow@3x.png") no-repeat left top;}
 /*注册*/
 .login{width:100%;padding:11rem 0;}
-.useId_box,.password_box{padding-left:6.25rem;border-bottom: 1px solid #46b0d5;}
+.useId_box,.password_box,.tel_number_box{padding-left:6.25rem;border-bottom: 1px solid #46b0d5;}
+.verification_code_box{padding-right:15rem;padding-left:6.25rem;border-bottom: 1px solid #46b0d5;position:relative;background-color:#fff;}
 .useId,
 .password,
-.password_again{
+.password_again,
+.tel_number,
+.verification_code{
     width:100%;
     border-radius:0;
     -moz-border-radius: 0;/*firefox*/
@@ -44,8 +48,19 @@
     font-size:16px;
     line-height:3rem;
 }
+.verification_code_box a{
+    display:block;
+    position:absolute;right:0;top:0;
+    width:15rem;height:6.25rem;
+    font-family: "苹方 常规", sans-serif;
+    font-size:14px;
+    line-height:6.25rem;
+    color:#007aff;
+    text-align:center;
+}
 .useId_box{position:relative; background:#fff url("../HTML/images/account.png") no-repeat 2rem center;}
 .password_box{background:#fff url("../HTML/images/password.png") no-repeat 2rem center;}
+.tel_number_box{background:#fff url("../HTML/images/phone.png") no-repeat 2rem center;}
 .use_class{
     position:absolute;
     right:0;top:0;
@@ -118,6 +133,17 @@
     height:12.5rem;line-height:6rem;
     font-family: "SF UI Display",sans-serif;font-size:32px;
 }
+[data-dpr="2"].tel_number_box{background:#fff url("../HTML/images/phone@2x.png") no-repeat 4rem center;}
+[data-dpr="2"].tel_number{ height:12.5rem;line-height:6rem;
+    font-family: "SF UI Display",sans-serif;font-size:32px;}
+[data-dpr="2"].verification_code_box{padding-right:30rem;padding-left:12.5rem;border-bottom: 2px solid #46b0d5;}
+[data-dpr="2"].verification_code_box a{width:30rem;height:12.5rem;
+    font-family: "苹方 常规", sans-serif;
+    font-size:28px;
+    line-height:12.5rem;
+    color:#007aff;}
+[data-dpr="2"].verification_code{ height:12.5rem;line-height:6rem;
+    font-family: "SF UI Display",sans-serif;font-size:32px;}
 [data-dpr="3"].useId_box{padding-left:18.75rem;border-bottom: 3px solid #46b0d5;
     background:#fff url("../HTML/images/account@3x.png") no-repeat 6rem center;
 }
@@ -137,3 +163,49 @@
     height:18.75rem;line-height:9rem;
     font-family: "SF UI Display",sans-serif;font-size:48px;
 }
+[data-dpr="3"].tel_number_box{background:#fff url("../HTML/images/phone@3x.png") no-repeat 6rem center;}
+[data-dpr="3"].tel_number{ height:18.75rem;line-height:9rem;
+    font-family: "SF UI Display",sans-serif;font-size:48px;
+}
+[data-dpr="3"].verification_code_box{padding-right:45rem;padding-left:18.75rem;border-bottom: 3px solid #46b0d5;}
+[data-dpr="3"].verification_code_box a{width:45rem;height:18.75rem;
+    font-family: "苹方 常规", sans-serif;
+    font-size:42px;
+    line-height:18.75rem;
+    color:#007aff;}
+[data-dpr="3"].verification_code{ height:18.75rem;line-height:9rem;
+    font-family: "SF UI Display",sans-serif;font-size:48px;
+}
+/*注册按钮*/
+.register_submit{
+    border:0 none;
+    outline: none;
+    background-color:#46b0d5;
+    -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+    border-radius:0;
+    -moz-border-radius: 0;/*firefox*/
+    -webkit-border-radius: 0;/*Safari and Chrome*/
+    -ms-border-radius: 0;/*IE*/
+    -o-border-radius: 0;/*Opera*/
+    height:6.25rem;width:100%;
+    color:#fff;
+    cursor: pointer;
+    margin-top:6.25rem;
+    font-family:"苹方 粗体", sans-serif;font-size:18px;line-height:6.25rem;text-align:center;
+}
+.tos{font-size:14px;margin-top:1rem;padding-left:1rem;color:#323232;}
+.tos a{color:#007aff;}
+.re_login{
+    display:block;
+    padding-right: 2rem;
+    padding-top:2rem;
+    text-align:right;
+    font-family:"苹方 中等", sans-serif;font-size:14px;
+    color:#007aff;
+}
+[data-dpr="2"].register_submit{height:12.5rem;font-size:36px;line-height:12.5rem;margin-top:12.5rem;padding-left:2rem;}
+[data-dpr="2"].tos{font-size:28px;margin-top:2rem;}
+[data-dpr="2"].re_login{padding-right: 4rem;font-size:28px; padding-top:4rem;color:#007aff;}
+[data-dpr="3"].register_submit{height:18.75rem;font-size:54px;line-height:18.75rem;margin-top:18.75rem;padding-left:3rem;}
+[data-dpr="3"].tos{font-size:42px;margin-top:3rem;}
+[data-dpr="3"].re_login{padding-right: 6rem;font-size:42px; padding-top:6rem;color:#007aff;}

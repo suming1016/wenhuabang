@@ -100,7 +100,7 @@
     border:0 none;
     outline: none;
     background-color:#46b0d5;
-    -webkit-appearance: none;/*Safari and Chrome*/
+    -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
     border-radius:0;
     -moz-border-radius: 0;/*firefox*/
     -webkit-border-radius: 0;/*Safari and Chrome*/
