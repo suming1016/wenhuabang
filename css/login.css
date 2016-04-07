@@ -1,4 +1,4 @@
-/*登录、注册样式*/
+/*登录页样式*/
 /*导航条*/
 .top_nav{
     position: fixed;
@@ -13,9 +13,19 @@
     text-align: center;
     line-height: 5.5rem;
 }
+.return{
+    position:absolute;
+    left:2rem;
+    top:1.375rem;
+    display:block;
+    width:2.75rem;
+    height:2.75rem;
+    background:url("../HTML/images/back_arrow.png") no-repeat left top;
+}
 [data-dpr="2"].top_nav{height: 11rem;font-size:40px;line-height: 11rem;}
+[data-dpr="2"].return{left:4rem;top:2.75rem;width:5.5rem;height:5.5rem;background:url("../HTML/images/back_arrow@2x.png") no-repeat left top;}
 [data-dpr="3"].top_nav{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
-
+[data-dpr="3"].return{left:6rem;top:4.125rem;width:8.25rem;height:8.25rem;background:url("../HTML/images/back_arrow@3x.png") no-repeat left top;}
 /*登录*/
 /*图标*/
 .login{width:100%;padding:11rem 0;}

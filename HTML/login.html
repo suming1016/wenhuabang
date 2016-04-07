@@ -35,24 +35,15 @@
     <script src="../lib-flexible-master/build/flexible.debug.js"></script>
     <!--关联外部样式-->
     <link href="../css/base.css" rel="stylesheet" type="text/css">
-    <link href="../css/loginAndUp.css" rel="stylesheet" type="text/css">
-<script type="text/javascript">
-    if("data-dpr='1'"){
-        document.getElementById("#useID").width = document.getElementById("#login").width - 44;
-    }else if("data-dpr='2'"){
-        document.getElementById("#useID").width = document.getElementById("#login").width - 88;
-    }else if("data-dpr='3'"){
-        document.getElementById("#useID").width = document.getElementById("#login").width - 132;
-    }
-</script>
+    <link href="../css/login.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!--导航条-->
 <div class="top_nav">
-    <a class="top_nav_return"></a>登录
+    <a class="return"></a>登录
 </div>
 <!--登录-->
-<div class="login" id="login">
+<div class="login">
     <img class="app_login_img" src="images/login_img.png">
     <div class="useId_box">
         <input  class="useId" placeholder="邮箱或手机号" type="text" id="useId" name="useId" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = '邮箱或手机号';}">

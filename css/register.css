@@ -1,0 +1,139 @@
+/*注册页样式*/
+/*导航条*/
+.top_nav{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:5.5rem;
+    font-family: "苹方 中等", sans-serif;
+    font-size: 20px;
+    background-color: #46b0d5;
+    color:#fff;
+    text-align: center;
+    line-height: 5.5rem;
+}
+.return{
+    position:absolute;
+    left:2rem;
+    top:1.375rem;
+    display:block;
+    width:2.75rem;
+    height:2.75rem;
+    background:url("../HTML/images/back_arrow.png") no-repeat left top;
+}
+[data-dpr="2"].top_nav{height: 11rem;font-size:40px;line-height: 11rem;}
+[data-dpr="2"].return{left:4rem;top:2.75rem;width:5.5rem;height:5.5rem;background:url("../HTML/images/back_arrow@2x.png") no-repeat left top;}
+[data-dpr="3"].top_nav{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
+[data-dpr="3"].return{left:6rem;top:4.125rem;width:8.25rem;height:8.25rem;background:url("../HTML/images/back_arrow@3x.png") no-repeat left top;}
+/*注册*/
+.login{width:100%;padding:11rem 0;}
+.useId_box,.password_box{padding-left:6.25rem;border-bottom: 1px solid #46b0d5;}
+.useId,
+.password,
+.password_again{
+    width:100%;
+    border-radius:0;
+    -moz-border-radius: 0;/*firefox*/
+    -webkit-border-radius: 0;/*Safari and Chrome*/
+    -ms-border-radius: 0;/*IE*/
+    -o-border-radius: 0;/*Opera*/
+    border: none;
+    height:6.25rem;
+    font-family: "SF UI Text",sans-serif;
+    font-size:16px;
+    line-height:3rem;
+}
+.useId_box{position:relative; background:#fff url("../HTML/images/account.png") no-repeat 2rem center;}
+.password_box{background:#fff url("../HTML/images/password.png") no-repeat 2rem center;}
+.use_class{
+    position:absolute;
+    right:0;top:0;
+    width:16rem;height:6.25rem;
+    overflow:hidden;
+    padding:1.625rem 0;
+}
+.use_class div{
+    width:6rem;height:3rem;
+    float:left;
+    margin-right:2rem;
+    font-family:"苹方 常规", sans-serif;
+    font-size:12px;
+    line-height:3rem;
+    text-align:center;
+    border-radius: 2px;
+    -moz-border-radius: 2px;/*firefox*/
+    -webkit-border-radius: 2px;/*Safari and Chrome*/
+    -ms-border-radius: 2px;/*IE*/
+    -o-border-radius: 2px;/*Opera*/
+}
+.use_class div:first-child{background-color:#46b0d5;}
+.use_class div:last-child{background-color:#ccc;}
+.use_class div:hover{cursor:pointer;}
+[data-dpr="2"].use_class{ width:32rem;height:12.5rem;padding:3.25rem 0;}
+[data-dpr="2"].use_class div{
+    width:12rem;height:6rem;
+    float:left;
+    margin-right:4rem;
+    font-family:"苹方 常规", sans-serif;
+    font-size:24px;
+    line-height:6rem;
+    text-align:center;
+    border-radius: 4px;
+    -moz-border-radius: 4px;/*firefox*/
+    -webkit-border-radius: 4px;/*Safari and Chrome*/
+    -ms-border-radius: 4px;/*IE*/
+    -o-border-radius:4px;/*Opera*/
+}
+[data-dpr="3"].use_class{ width:48rem;height:18.75rem;padding:4.875rem 0;}
+[data-dpr="3"].use_class div{
+    width:18rem;height:9rem;
+    float:left;
+    margin-right:6rem;
+    font-family:"苹方 常规", sans-serif;
+    font-size:36px;
+    line-height:9rem;
+    text-align:center;
+    border-radius: 6px;
+    -moz-border-radius: 6px;/*firefox*/
+    -webkit-border-radius: 6px;/*Safari and Chrome*/
+    -ms-border-radius: 6px;/*IE*/
+    -o-border-radius:6px;/*Opera*/
+}
+[data-dpr="2"].useId_box{padding-left:12.5rem;border-bottom: 2px solid #46b0d5;
+    background:url("../HTML/images/account@2x.png") no-repeat 4rem center;
+}
+[data-dpr="2"].useId{
+    height:12.5rem;line-height:6rem;
+    font-family: "SF UI Display",sans-serif;font-size:32px;
+}
+[data-dpr="2"].password_box{
+    border-bottom: 2px solid #46b0d5;padding-left:12.5rem;
+    background:#fff url("../HTML/images/password@2x.png") no-repeat 4rem center;}
+[data-dpr="2"].password{
+    height:12.5rem;line-height:6rem;
+    font-family: "SF UI Display",sans-serif;font-size:32px;
+}
+[data-dpr="2"].password_again{
+    height:12.5rem;line-height:6rem;
+    font-family: "SF UI Display",sans-serif;font-size:32px;
+}
+[data-dpr="3"].useId_box{padding-left:18.75rem;border-bottom: 3px solid #46b0d5;
+    background:#fff url("../HTML/images/account@3x.png") no-repeat 6rem center;
+}
+[data-dpr="3"].useId{
+    height:18.75rem;line-height:9rem;
+    font-family: "SF UI Display",sans-serif;font-size:48px;
+}
+[data-dpr="3"].password_box{
+    padding-left:18.75rem;border-bottom: 3px solid #46b0d5;
+    background:#fff url("../HTML/images/password@3x.png") no-repeat 6rem center;
+}
+[data-dpr="3"].password{
+    height:18.75rem;line-height:9rem;
+    font-family: "SF UI Display",sans-serif;font-size:48px;
+}
+[data-dpr="3"].password_again{
+    height:18.75rem;line-height:9rem;
+    font-family: "SF UI Display",sans-serif;font-size:48px;
+}
