@@ -36,8 +36,22 @@
     <!--关联外部样式-->
     <link href="../css/base.css" rel="stylesheet" type="text/css">
     <link href="../css/register.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="../AmazeUI-2.6.0/assets/js/jquery.min.js"></script>
-   
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+//  用户类别选择，个人、机构
+    $(document).ready(function(){
+        $("dd").click(function(){
+              $(this).css("background","#46b0d5").siblings().css("background","#ccc");
+        });
+        $(".register_submit").click(function(){
+            if(document.getElementById("useId").value < 3){
+                alert("123SAD4");
+            }
+        });
+    });
+
+
+    </script>
 </head>
 <body>
 <!--导航条-->
@@ -45,13 +59,13 @@
         <a class="return"></a>注册
     </div>
     <!--注册表-->
-    <div class="login">
+    <form class="login">
         <div class="useId_box">
-            <input  class="useId" placeholder="请设置用户名" type="text" id="useId" name="useId" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = '请设置用户名';}">
-            <div class="use_class">
-                <div>个人</div>
-                <div>机构</div>
-            </div>
+            <input  class="useId" placeholder="请设置用户名" type="text" id="useId" value="" name="useId" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = '请设置用户名';}">
+            <dl class="use_class">
+                <dd>个人</dd>
+                <dd>机构</dd>
+            </dl>
         </div>
         <div class="password_box">
             <input  class="password" placeholder="请设置登录密码" type="password" id="password" name="password" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = '请设置登录密码';}">
@@ -67,10 +81,10 @@
             <a href="">获取验证码</a>
         </div>
 
-        <input class="register_submit" type="submit" value="注册">
+        <input class="register_submit" type="button" value="注册">
         <p class="tos">注册意味着您同意<a href="">服务条款</a>和<a href="">隐私政策</a>。</p>
         <a class="re_login" href="login.html">已有账号，登录</a>
-    </div>
+    </form>
 
 </body>
 </html>

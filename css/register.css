@@ -68,7 +68,7 @@
     overflow:hidden;
     padding:1.625rem 0;
 }
-.use_class div{
+.use_class dd{
     width:6rem;height:3rem;
     float:left;
     margin-right:2rem;
@@ -81,12 +81,13 @@
     -webkit-border-radius: 2px;/*Safari and Chrome*/
     -ms-border-radius: 2px;/*IE*/
     -o-border-radius: 2px;/*Opera*/
+    background-color:#ccc;
 }
-.use_class div:first-child{background-color:#46b0d5;}
-.use_class div:last-child{background-color:#ccc;}
-.use_class div:hover{cursor:pointer;}
+/*.use_class dd:first-child{background-color:#46b0d5;}*/
+/*.use_class dd:last-child{background-color:#ccc;}*/
+.use_class dd:hover{cursor:pointer;}
 [data-dpr="2"].use_class{ width:32rem;height:12.5rem;padding:3.25rem 0;}
-[data-dpr="2"].use_class div{
+[data-dpr="2"].use_class dd{
     width:12rem;height:6rem;
     float:left;
     margin-right:4rem;
@@ -101,7 +102,7 @@
     -o-border-radius:4px;/*Opera*/
 }
 [data-dpr="3"].use_class{ width:48rem;height:18.75rem;padding:4.875rem 0;}
-[data-dpr="3"].use_class div{
+[data-dpr="3"].use_class dd{
     width:18rem;height:9rem;
     float:left;
     margin-right:6rem;
