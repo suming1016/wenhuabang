@@ -1,0 +1,91 @@
+/*所有项目 列表*/
+/*header css*/
+.top_nav{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:5.5rem;
+    font-family: "苹方 中等", sans-serif;
+    font-size: 20px;
+    background-color: #46b0d5;
+    color:#fff;
+    text-align: center;
+    line-height: 5.5rem;
+    z-index: 100;
+}
+.return{
+    position:absolute;
+    left:2rem;
+    top:1.25rem;
+    display:block;
+    line-height:3rem;
+    font-size:16px;
+}
+[data-dpr="2"].top_nav{height: 11rem;font-size:40px;line-height: 11rem;}
+[data-dpr="2"].return{left:4rem;top:2.5rem;line-height:6rem;}
+[data-dpr="3"].top_nav{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
+[data-dpr="3"].return{left:6rem;top:3.75rem;line-height:9rem;}
+
+/*content css*/
+
+
+/*footer css*/
+.bottom_nav{
+    position:fixed;
+    left:0;
+    bottom:0;
+    height:6.125rem;
+    width: 100%;
+}
+.bottom_nav dd{
+    width:25%;
+    float: left;
+
+    /*box-sizing:border-box;!*Internet Explorer、Opera 以及 Chrome *!*/
+    /*-moz-box-sizing:border-box; !* Firefox *!*/
+    /*-webkit-box-sizing:border-box; !* Safari *!*/
+}
+.bottom_nav dd a{
+    display:block;
+    width:100%;height:100%;
+    color: #ffffff;
+    text-align: center;
+    line-height:14px;
+    padding-top:3.75rem;
+    padding-bottom:0.625rem;
+}
+.bottom_nav .recommend a{
+    border-right: #fff dashed 1px;
+    background:#c7c7cc url("../HTML/images/recommend.png") no-repeat center 0.5rem;
+}
+.bottom_nav .project_list a{
+    color:#46b0d5;
+    border-right: #fff dashed 1px;
+    background:#c7c7cc url("../HTML/images/all_project_selected.png") no-repeat center 0.5rem;
+}
+.bottom_nav .project_publish a{
+    border-right: #fff dashed 1px;
+    background:#c7c7cc url("../HTML/images/project_publish.png") no-repeat center 0.5rem;
+}
+.bottom_nav .me a{
+    background:#c7c7cc url("./../HTML/images/me.png") no-repeat center 0.5rem;
+}
+[data-dpr="2"].bottom_nav{height:12.25rem;}
+[data-dpr="2"].bottom_nav dd a{padding-top:7.5rem;padding-bottom:1.25rem;}
+[data-dpr="2"].bottom_nav .recommend a{border-right: #fff dashed 2px;
+    background:#c7c7cc url("../HTML/images/recommend@2x.png") no-repeat center 1rem;}
+[data-dpr="2"].bottom_nav .project_list a{border-right: #fff dashed 2px;
+    background:#c7c7cc url("../HTML/images/all_project_selected@2x.png") no-repeat center 1rem;}
+[data-dpr="2"].bottom_nav .project_publish a{border-right: #fff dashed 2px;
+    background:#c7c7cc url("../HTML/images/project_publish@2x.png") no-repeat center 1rem;}
+[data-dpr="2"].bottom_nav .me a{background:#c7c7cc url("../HTML/images/me@2x.png") no-repeat center 1rem;}
+[data-dpr="3"].bottom_nav{height:18.375rem;}
+[data-dpr="3"].bottom_nav dd a{padding-top:11.25rem;padding-bottom:1.875rem;}
+[data-dpr="3"].bottom_nav .recommend a{border-right: #fff dashed 3px;
+    background:#c7c7cc url("../HTML/images/recommend@3x.png") no-repeat center 1.5rem;}
+[data-dpr="3"].bottom_nav .project_list a{border-right: #fff dashed 3px;
+    background:#c7c7cc url("../HTML/images/all_project_selected@3x.png") no-repeat center 1.5rem;}
+[data-dpr="3"].bottom_nav .project_publish a{border-right: #fff dashed 3px;
+    background:#c7c7cc url("../HTML/images/project_publish@3x.png") no-repeat center 1.5rem;}
+[data-dpr="3"].bottom_nav .me a{background:#c7c7cc url("../HTML/images/me@3x.png") no-repeat center 1.5rem;}
