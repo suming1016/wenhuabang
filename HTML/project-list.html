@@ -36,15 +36,201 @@
     <!--关联外部样式-->
     <link href="../css/base.css" rel="stylesheet" type="text/css">
     <link href="../css/project-list.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        var $$ = function (id) {
+            return document.getElementById(id);
+        };
+        window.onload = function () {
+            var btnSelect1 = $$("btn-select1");
+            var curSelect1 = btnSelect1.getElementsByTagName("span")[0];
+            var oSelect1 = btnSelect1.getElementsByTagName("select")[0];
+            var aOption1 = btnSelect1.getElementsByTagName("option");
+            oSelect1.onchange = function () {
+                var text = oSelect1.options[oSelect1.selectedIndex].text;
+                curSelect1.innerHTML = text;
+            }
+
+        }
+
+    </script>
 </head>
 <body>
 <!--header start-->
 <div class="top_nav">
     <a class="return">分类</a>所有项目
+
+    <div class="project-class" hidden="hidden">
+        <div class="class-selected">
+            <div class="class1">内容内容<span class="del"></span></div>
+            <div class="class2">内容内容<span class="del"></span></div>
+            <div class="class3">内容内容<span class="del"></span></div>
+            <div class="class4">内容内容<span class="del"></span></div>
+        </div>
+        <div class="class-list">
+
+
+        </div>
+    </div>
 </div>
 <!--header end-->
 <!--content start-->
+    <!--项目分类-->
+<div class="class-list">
+<form>
+    <a class="btn-select" id="btn-select1">
+        <div class="cur-select"><span>请选择</span><img src="images/option-sel@2x.png"></div>
+        <select>
+            <option>选项一</option>
+            <option>选项二</option>
+            <option>选项三</option>
+            <option>选项四</option>
+            <option>选项五</option>
+        </select>
+    </a>
+</form>
+<form>
+    <a class="btn-select" id="btn-select2">
+        <div class="cur-select"><span>请选择</span><img src="images/option-sel@2x.png"></div>
+        <select>
+            <option>选项一</option>
+            <option>选项二</option>
+            <option>选项三</option>
+            <option>选项四</option>
+            <option>选项五</option>
+        </select>
+    </a>
+</form>
+<form>
+    <a class="btn-select" id="btn-select3">
+        <div class="cur-select"><span>请选择</span><img src="images/option-sel@2x.png"></div>
+        <select>
+            <option>选项一</option>
+            <option>选项二</option>
+            <option>选项三</option>
+            <option>选项四</option>
+            <option>选项五</option>
+        </select>
+    </a>
+</form>
+<form>
+    <a class="btn-select" id="btn-select4">
+        <div class="cur-select"><span>请选择</span><img src="images/option-sel@2x.png"></div>
+        <select>
+            <option>选项一</option>
+            <option>选项二</option>
+            <option>选项三</option>
+            <option>选项四</option>
+            <option>选项五</option>
+        </select>
+    </a>
+</form>
+</div>
+<!--项目列表-->
+<div class="project">
+    <img src="pro-images/trade_1440984381225.png">
+    <dl class="project-message">
+        <dt class="project-title">
+            <a href="">贵州省遵义市遵义县高山户外运动旅游基地项目寻求合作</a>
+        </dt>
+        <dd class="project-class">
+            <span>贵州</span><span>遵义市</span><span>文化旅游</span><span>合作</span>
+        </dd>
+        <dd class="project-price">15000.00万元</dd>
+        <dd  class="share"></dd>
+    </dl>
+</div>
+<div class="project">
+    <img src="pro-images/trade_1440984381225.png">
+    <dl class="project-message">
+        <dt class="project-title">
+            <a href="">贵州省遵义市遵义县高山户外运动旅游基地项目寻求合作</a>
+        </dt>
+        <dd class="project-class">
+            <span>贵州</span><span>遵义市</span><span>文化旅游</span><span>合作</span>
+        </dd>
+        <dd class="project-price">15000.00万元</dd>
+        <dd  class="share"></dd>
+    </dl>
+</div>
+<div class="project">
+    <img src="pro-images/trade_1440984381225.png">
+    <dl class="project-message">
+        <dt class="project-title">
+            <a href="">贵州省遵义市遵义县高山户外运动旅游基地项目寻求合作</a>
+        </dt>
+        <dd class="project-class">
+            <span>贵州</span><span>遵义市</span><span>文化旅游</span><span>合作</span>
+        </dd>
+        <dd class="project-price">15000.00万元</dd>
+        <dd  class="share"></dd>
+    </dl>
+</div>
+<div class="project">
+    <img src="pro-images/trade_1440984381225.png">
+    <dl class="project-message">
+        <dt class="project-title">
+            <a href="">贵州省遵义市遵义县高山户外运动旅游基地项目寻求合作</a>
+        </dt>
+        <dd class="project-class">
+            <span>贵州</span><span>遵义市</span><span>文化旅游</span><span>合作</span>
+        </dd>
+        <dd class="project-price">15000.00万元</dd>
+        <dd  class="share"></dd>
+    </dl>
+</div>
+<div class="project">
+    <img src="pro-images/trade_1440984381225.png">
+    <dl class="project-message">
+        <dt class="project-title">
+            <a href="">贵州省遵义市遵义县高山户外运动旅游基地项目寻求合作</a>
+        </dt>
+        <dd class="project-class">
+            <span>贵州</span><span>遵义市</span><span>文化旅游</span><span>合作</span>
+        </dd>
+        <dd class="project-price">15000.00万元</dd>
+        <dd  class="share"></dd>
+    </dl>
+</div>
+<div class="project">
+    <img src="pro-images/trade_1440984381225.png">
+    <dl class="project-message">
+        <dt class="project-title">
+            <a href="">贵州省遵义市遵义县高山户外运动旅游基地项目寻求合作</a>
+        </dt>
+        <dd class="project-class">
+            <span>贵州</span><span>遵义市</span><span>文化旅游</span><span>合作</span>
+        </dd>
+        <dd class="project-price">15000.00万元</dd>
+        <dd  class="share"></dd>
+    </dl>
+</div>
+<div class="project">
+    <img src="pro-images/trade_1440984381225.png">
+    <dl class="project-message">
+        <dt class="project-title">
+            <a href="">贵州省遵义市遵义县高山户外运动旅游基地项目寻求合作</a>
+        </dt>
+        <dd class="project-class">
+            <span>贵州</span><span>遵义市</span><span>文化旅游</span><span>合作</span>
+        </dd>
+        <dd class="project-price">15000.00万元</dd>
+        <dd  class="share"></dd>
+    </dl>
+</div>
+<div class="project">
+    <img src="pro-images/trade_1440984381225.png">
+    <dl class="project-message">
+        <dt class="project-title">
+            <a href="">贵州省遵义市遵义县高山户外运动旅游基地项目寻求合作</a>
+        </dt>
+        <dd class="project-class">
+            <span>贵州</span><span>遵义市</span><span>文化旅游</span><span>合作</span>
+        </dd>
+        <dd class="project-price">15000.00万元</dd>
+        <dd  class="share"></dd>
+    </dl>
+</div>
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
 
 <!--content end-->
 <!--footer start-->

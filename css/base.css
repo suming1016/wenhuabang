@@ -8,6 +8,9 @@ html{
 /* 1.去除android a/input标签被点击时产生的边框 2.去除ios a标签被点击时产生的半透明灰色背景 */
 a,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
 a{text-decoration:none;}
+a:hover{
+    text-decoration:none;
+}
 img{margin:0;}
 body {
     min-width: 320px;   /*有些安卓系统自带的浏览器并不支持user-scalable=no(不给缩放)这一条规则，能够对页面进行放大，

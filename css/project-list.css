@@ -28,6 +28,96 @@
 [data-dpr="3"].return{left:6rem;top:3.75rem;line-height:9rem;}
 
 /*content css*/
+.class-list{overflow:hidden;}
+form{
+    float:left;width:25%;margin-top:5.5rem; height: 30px; border-bottom:1px solid #ccc;
+}
+.btn-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    font-family: "苹方 常规", sans-serif;
+    font-size:11px;
+
+}
+.btn-select .cur-select {
+    position: absolute;
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    /*background: url("../HTML/images/option-sel@2x.png") no-repeat 125px center;*/
+    text-indent: 10px;
+    text-align:center;
+    margin-top:5px;
+    border-right:1px solid #ccc;
+}
+#btn-select4 .cur-select{
+    border-right:0 none;
+}
+.cur-select img{margin-left:5px;margin-bottom:2px;}
+.btn-select select {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    filter: alpha(opacity:0);
+    font-family: "苹方 常规", sans-serif;
+    font-size:14px;
+text-align:center;
+}
+.btn-select select option {
+    text-indent: 10px;
+}
+/*项目列表*/
+.project{position:relative;padding:1rem;border-bottom:1px solid #ccc;}
+.project img{
+    position: absolute;
+    display:block;
+    width:15rem;
+    height:15rem;
+    border-radius:2px;
+    -moz-border-radius: 2px;/*firefox*/
+    -webkit-border-radius: 2px;/*Safari and Chrome*/
+    -ms-border-radius: 2px;/*IE*/
+    -o-border-radius: 2px;/*Opera*/
+}
+.project-message{
+    overflow:hidden;
+    padding-left:16rem;
+    }
+.project-title,.project-class{
+    margin-bottom:4rem;
+}
+.project-title a{
+    font-family: "苹方 中等", sans-serif;
+    font-size: 16px;
+    color: #323232;
+    display: block;
+    /*width:100px;*/
+    overflow:hidden;
+    text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+    -o-text-overflow:ellipsis;/* Opera 9-10 */
+    -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+    white-space: nowrap;
+}
+dd span{
+    color:#999;
+    font-size:12px;
+    margin-right:2rem;
+}
+.project-price{
+    color:#323232;
+    clear:left;
+    float:left;
+}
+.share{
+    float:right;
+    width: 2rem;
+    height:2rem;
+    background: url("../HTML/images/share.png") no-repeat left top;
+}
 
 
 /*footer css*/
