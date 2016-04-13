@@ -2,7 +2,7 @@
 
 body{padding-bottom:6.125rem;position: relative;padding-top:5.5rem}
 [data-dpr="2"]body{padding-bottom: 12.25rem;padding-top:11rem;}
-[data-dpr="2"]body{padding-bottom: 18.375rem;padding-top:16.5rem;}
+[data-dpr="3"]body{padding-bottom: 18.375rem;padding-top:16.5rem;}
 /*导航条*/
 
 .recommend_title{

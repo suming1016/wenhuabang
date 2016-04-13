@@ -36,6 +36,7 @@
     <!--关联外部样式-->
     <link href="../css/base.css" rel="stylesheet" type="text/css">
     <link href="../css/project-list.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         var $$ = function (id) {
             return document.getElementById(id);
@@ -44,38 +45,56 @@
             var btnSelect1 = $$("btn-select1");
             var curSelect1 = btnSelect1.getElementsByTagName("span")[0];
             var oSelect1 = btnSelect1.getElementsByTagName("select")[0];
-
             oSelect1.onchange = function () {
                 curSelect1.innerHTML = oSelect1.options[oSelect1.selectedIndex].text;
-
-            }
-
+            };
+            var btnSelect2 = $$("btn-select2");
+            var curSelect2 = btnSelect2.getElementsByTagName("span")[0];
+            var oSelect2 = btnSelect2.getElementsByTagName("select")[0];
+            oSelect2.onchange = function () {
+                curSelect2.innerHTML = oSelect2.options[oSelect2.selectedIndex].text;
+            };
+            var btnSelect3 = $$("btn-select3");
+            var curSelect3 = btnSelect3.getElementsByTagName("span")[0];
+            var oSelect3 = btnSelect3.getElementsByTagName("select")[0];
+            oSelect3.onchange = function () {
+                curSelect3.innerHTML = oSelect3.options[oSelect3.selectedIndex].text;
+            };
+            var btnSelect4 = $$("btn-select4");
+            var curSelect4 = btnSelect4.getElementsByTagName("span")[0];
+            var oSelect4 = btnSelect4.getElementsByTagName("select")[0];
+            oSelect4.onchange = function () {
+                curSelect4.innerHTML = oSelect4.options[oSelect4.selectedIndex].text;
+            };
         }
-
+        $(document).ready(function(){
+            $(".return").click(function(){
+                $(".project-class-sel").toggle();
+            });
+        });
     </script>
 </head>
 <body>
 <!--header start-->
 <div class="top_nav">
     <a class="return">分类</a>所有项目
-
-    <div class="project-class" hidden="hidden">
+</div>
+<!--header end-->
+<!--content start-->
+    <!--项目分类-->
+<div class="class-list">
+    <div class="project-class-sel" hidden="hidden">
         <div class="class-selected">
-            <div class="class1">内容内容<span class="del"></span></div>
-            <div class="class2">内容内容<span class="del"></span></div>
-            <div class="class3">内容内容<span class="del"></span></div>
-            <div class="class4">内容内容<span class="del"></span></div>
+            <div class="class1">内容内容<sup class="del">×</sup></div>
+            <div class="class2">内容内容<sup class="del">×</sup></div>
+            <div class="class3">内容内容<sup class="del">×</sup></div>
+            <div class="class4">内容内容<sup class="del">×</sup></div>
         </div>
         <div class="class-list">
 
 
         </div>
     </div>
-</div>
-<!--header end-->
-<!--content start-->
-    <!--项目分类-->
-<div class="class-list">
 <form>
     <label class="btn-select" id="btn-select1">
         <object class="cur-select"><span>请选择</span><img src="images/option-sel@2x.png"></object>

@@ -13,6 +13,7 @@
     text-align: center;
     line-height: 5.5rem;
     z-index: 100;
+    overflow:visible;
 }
 .return{
     position:absolute;
@@ -28,6 +29,19 @@
 [data-dpr="3"].return{left:6rem;top:3.75rem;line-height:9rem;}
 
 /*content css*/
+.project-class-sel{
+    position:absolute;left:0;top:5.5rem;
+    background-color: #d4d4d4;
+    z-index: 1000;width:30%;
+}
+.class-selected{overflow:hidden;margin:0 auto;}
+.class1,.class2,.class3,.class4 {
+    float: left;
+    height:3rem;
+    line-height:3rem;
+    margin-right:1rem;
+}
+.del{background-color:red;display:inline-block;width:4px;}
 .class-list{overflow:hidden;}
 form{
     float:left;width:25%;margin-top:5.5rem; height: 30px; border-bottom:1px solid #ccc;
