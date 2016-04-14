@@ -36,17 +36,13 @@
     <!--关联外部样式-->
     <link href="../css/base.css" rel="stylesheet" type="text/css">
     <link href="../css/project-detail.css" rel="stylesheet" type="text/css">
-    <script src="../js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        function imgScroll(){
-            $(".images").animate({marginTop:"-25rem"},1000,function(){
+    <!--<script src="../js/jquery-1.9.1.min.js" type="text/javascript"></script>-->
+    <!--<script type="text/javascript">-->
+        <!--function imgScroll(){-->
 
-                $(".images img:last").after($(".images img:first"));
-                $(".images").css({marginTop:0});
-            });
-        }
-        timer = setInterval(imgScroll,3000);
-    </script>
+        <!--}-->
+        <!--timer = setInterval(imgScroll,3000);-->
+    <!--</script>-->
 </head>
 <body>
 <!--header start-->
@@ -77,12 +73,13 @@
 <div class="note">
     <!--project img-->
     <div class="img-windows">
-        <div class="images" id="images">
-            <img src="../HTML/pro-images/trade_1458626132009.jpg">
-            <img src="../HTML/pro-images/trade_1458626137391.jpg">
-            <img src="../HTML/pro-images/trade_1458626141370.png">
-            <img src="../HTML/pro-images/trade_1458626146253.jpg">
-        </div>
+        <dl class="images" id="images">
+            <dd><img src="../HTML/pro-images/trade_1458626132009.jpg"></dd>
+            <dd><img src="../HTML/pro-images/trade_1458626137391.jpg"></dd>
+            <dd><img src="../HTML/pro-images/trade_1458626141370.png"></dd>
+            <dd><img src="../HTML/pro-images/trade_1458626146253.jpg"></dd>
+            <dd><img src="../HTML/pro-images/trade_1458626132009.jpg"></dd>
+        </dl>
     </div>
 
     <h2>基本情况</h2>

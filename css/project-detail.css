@@ -164,15 +164,36 @@
     -webkit-border-radius:2px;
     -moz-border-radius:2px;
     border-radius:2px;
-}
-.images{
-    height:25rem;
     overflow:hidden;
 }
-.images img{
+
+.images dd{height:25rem;margin-left:0;}
+.images dd img{
     width:100%;
-    height:100%;
+    height:25rem;
 }
+.images{
+    position:relative;
+    animation:my-move 10s infinite;
+    -webkit-animation:my-move 10s infinite; /*Safari and Chrome*/
+}
+@keyframes my-move
+{
+    0% {top:0;}
+    25% {top:-25rem;}
+    50% {top:-50rem;}
+    75% {top:-75rem;}
+    100% {top:-100rem;}
+}
+@-webkit-keyframes my-move /*Safari and Chrome*/
+{
+    0% {top:0;}
+    25% {top:-25rem;}
+    50% {top:-50rem;}
+    75% {top:-75rem;}
+    100% {top:-100rem;}
+}
+
 /*project detail*/
 .note{
     padding:1rem;
