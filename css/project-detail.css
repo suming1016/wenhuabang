@@ -177,22 +177,26 @@
     animation:my-move 10s infinite;
     -webkit-animation:my-move 10s infinite; /*Safari and Chrome*/
 }
-@keyframes my-move
-{
-    0% {top:0;}
-    25% {top:-25rem;}
-    50% {top:-50rem;}
-    75% {top:-75rem;}
-    100% {top:-100rem;}
-}
-@-webkit-keyframes my-move /*Safari and Chrome*/
-{
-    0% {top:0;}
-    25% {top:-25rem;}
-    50% {top:-50rem;}
-    75% {top:-75rem;}
-    100% {top:-100rem;}
-}
+#pic1{ transition:All 0.5s ease-in-out;
+    -webkit-transition:All 0.5s ease-in-out;
+    -moz-transition:All 0.5s ease-in-out;
+    -o-transition:All 0.5s ease-in-out;}
+/*@keyframes my-move*/
+/*{*/
+    /*0% {top:0;}*/
+    /*25% {top:-25rem;}*/
+    /*50% {top:-50rem;}*/
+    /*75% {top:-75rem;}*/
+    /*100% {top:-100rem;}*/
+/*}*/
+/*@-webkit-keyframes my-move !*Safari and Chrome*!*/
+/*{*/
+    /*0% {top:0;}*/
+    /*25% {top:-25rem;}*/
+    /*50% {top:-50rem;}*/
+    /*75% {top:-75rem;}*/
+    /*100% {top:-100rem;}*/
+/*}*/
 
 /*project detail*/
 .note{
