@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="5c976e45-ee31-43b8-8df5-0caf4ffb6fde" name="localhost" url="http://192.168.1.8:8080">
+      <webServer id="5c976e45-ee31-43b8-8df5-0caf4ffb6fde" name="localhost" url="http://192.168.1.58:8080">
         <fileTransfer mountedRoot="F:\文化帮app\HTML" accessType="MOUNT" />
       </webServer>
     </option>
