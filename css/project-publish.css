@@ -149,7 +149,7 @@ p,.p-images{margin-top:6.5rem;font-size:14px;line-height:3rem;text-align:right;}
     color:#999;
     line-height:11rem;
     padding-right:6rem;
-    background:url("../HTML/images/disclosure-arrow.png") no-repeat 12rem center;
+    background:url("../HTML/images/disclosure-arrow@2x.png") no-repeat 12rem center;
 }
 [data-dpr="2"].in-mark{
     position:absolute;
@@ -168,7 +168,7 @@ p,.p-images{margin-top:6.5rem;font-size:14px;line-height:3rem;text-align:right;}
     color:#999;
     line-height:16.5rem;
     padding-right:9rem;
-    background:url("../HTML/images/disclosure-arrow.png") no-repeat 18rem center;
+    background:url("../HTML/images/disclosure-arrow@3x.png") no-repeat 18rem center;
 }
 [data-dpr="3"].in-mark{
     position:absolute;
@@ -225,6 +225,13 @@ select{
 .city{
     width:50%;
     float:left;
+    text-align: center;
+}
+.city:last-child{
+    padding-left:0;
+}
+.city option:first-child{
+    color:#ccc;
 }
 .p-text{
     display:block;
