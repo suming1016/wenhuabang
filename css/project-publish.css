@@ -1,0 +1,243 @@
+/*header css*/
+.top_nav{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:5.5rem;
+    font-family: "苹方 中等", sans-serif;
+    font-size: 20px;
+    background-color: #46b0d5;
+    color:#fff;
+    text-align: center;
+    line-height: 5.5rem;
+    z-index: 100;
+    overflow:visible;
+}
+.return{
+    position:absolute;
+    left:2rem;
+    top:1.25rem;
+    display:block;
+    line-height:3rem;
+    font-size:16px;
+}
+[data-dpr="2"].top_nav{height: 11rem;font-size:40px;line-height: 11rem;}
+[data-dpr="2"].return{left:4rem;top:2.5rem;line-height:6rem;}
+[data-dpr="3"].top_nav{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
+[data-dpr="3"].return{left:6rem;top:3.75rem;line-height:9rem;}
+/*content*/
+/*.content{padding:1rem;}*/
+/*[data-dpr="2"].content{padding:2rem;}*/
+/*[data-dpr="3"].content{padding:3rem;}*/
+p,.p-images{margin-top:6.5rem;font-size:14px;line-height:3rem;text-align:right;}
+.p-images{text-align: center;}
+[data-dpr="2"]p{margin-top:11rem;font-size:28px;line-height:6rem;}
+[data-dpr="2"].p-images{margin-top:13rem;text-align: center;}
+[data-dpr="3"].p-images{margin-top:19.5rem;text-align: center;}
+[data-dpr="3"]p{margin-top:16.5rem;font-size:42px;line-height:9rem;}
+.redF{color:#fff;}
+.in-box{
+    position: relative;
+    border-top:1px solid #ccc;
+
+    padding-left:9rem;
+    background-color:#fff;
+
+}
+[data-dpr="2"].in-box{
+    position: relative;
+    border-top:2px solid #ccc;
+    border-bottom:2px solid #ccc;
+    padding-left:18rem;
+    background-color:#fff;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+[data-dpr="3"].in-box{
+    position: relative;
+    border-top:3px solid #ccc;
+    border-bottom:3px solid #ccc;
+    padding-left:27rem;
+    background-color:#fff;
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+.in-name{
+    position: absolute;
+    left:0;
+    top:0;
+    font-size:14px;
+    height:6.25rem;
+    line-height:6.25rem;
+    z-index:10;
+}
+[data-dpr="2"].in-name{
+    position: absolute;
+    left:0;
+    top:0;
+    font-size:28px;
+    height:12.5rem;
+    line-height:12.5rem;
+}
+[data-dpr="3"].in-name{
+    position: absolute;
+    left:0;
+    top:0;
+    font-size:42px;
+    height:18.75rem;
+    line-height:18.75rem;
+}
+.in-box input{
+    border:0 none;
+    outline: none;
+    -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    height:6.25rem;
+    width:100%;
+    font-size:14px;
+ }
+[data-dpr="2"].in-box input{
+     border:0 none;
+     outline: none;
+     -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+     -webkit-border-radius:0;
+     -moz-border-radius:0;
+     border-radius:0;
+     height:12.5rem;
+     width:100%;
+    font-size:28px;
+ }
+[data-dpr="3"].in-box input{
+    border:0 none;
+    outline: none;
+    -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    height:18.75rem;
+    width:100%;
+    font-size:42px;
+}
+.cut{color:#fff;}
+.in-sel,.in-mark{
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:14px;
+    color:#999;
+    line-height:5.5rem;
+    padding-right:1rem;
+}
+.in-sel{
+    padding-right:3rem;
+    background:url("../HTML/images/disclosure-arrow.png") no-repeat 6rem center;
+}
+[data-dpr="2"].in-sel{
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:28px;
+    color:#999;
+    line-height:11rem;
+    padding-right:6rem;
+    background:url("../HTML/images/disclosure-arrow.png") no-repeat 12rem center;
+}
+[data-dpr="2"].in-mark{
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:28px;
+    color:#999;
+    line-height:11rem;
+    padding-right:2rem;
+}
+[data-dpr="3"].in-sel{
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:42px;
+    color:#999;
+    line-height:16.5rem;
+    padding-right:9rem;
+    background:url("../HTML/images/disclosure-arrow.png") no-repeat 18rem center;
+}
+[data-dpr="3"].in-mark{
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:42px;
+    color:#999;
+    line-height:16.5rem;
+    padding-right:3rem;
+}
+.select{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+select{
+
+    width:100%;
+    height:6.25rem;
+    /*z-index: 100;*/
+    border:0 none;
+    padding-left:9rem;
+    line-height:6.25rem;
+    /*删除select默认样式*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+[data-dpr="2"]select{
+    width:100%;
+    height:12.5rem;
+    /*z-index: 100;*/
+    border:0 none;
+    padding-left:18rem;
+    line-height:12.5rem;
+    /*删除select默认样式*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+[data-dpr="3"]select{
+    width:100%;
+    height:18.75rem;
+    /*z-index: 100;*/
+    border:0 none;
+    padding-left:27rem;
+    line-height:18.75rem;
+    /*删除select默认样式*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.f1{padding-left:14rem;}
+.f2{padding-left:19rem;}
+.f3{padding-left:8rem;}
+[data-dpr="2"].f1{padding-left:28rem;}
+[data-dpr="3"].f1{padding-left:42rem;}
+[data-dpr="2"].f2{padding-left:38rem;}
+[data-dpr="3"].f2{padding-left:57rem;}
+[data-dpr="2"].f3{padding-left:16rem;}
+[data-dpr="3"].f3{padding-left:24rem;}
+.btn{
+    border:0 none;
+    outline: none;
+    background-color:#46b0d5;
+    -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+    border-radius:0;
+    -moz-border-radius: 0;/*firefox*/
+    -webkit-border-radius: 0;/*Safari and Chrome*/
+    -ms-border-radius: 0;/*IE*/
+    -o-border-radius: 0;/*Opera*/
+    height:6.25rem;width:100%;
+    color:#fff;
+    cursor: pointer;
+    margin-top:6.25rem;
+    font-family:"苹方 粗体", sans-serif;font-size:18px;line-height:6.25rem;text-align:center;
+}
