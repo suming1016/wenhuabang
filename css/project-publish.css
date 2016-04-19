@@ -120,6 +120,12 @@ p,.p-images{margin-top:6.5rem;font-size:14px;line-height:3rem;text-align:right;}
     height:18.75rem;
     width:100%;
     font-size:42px;
+    /*不换行，溢出显示“。。。”*/
+    overflow:hidden;
+    text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+    -o-text-overflow:ellipsis;/* Opera 9-10 */
+    -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+    white-space: nowrap;
 }
 .cut{color:#fff;}
 .in-sel,.in-mark{
@@ -216,13 +222,30 @@ select{
     -moz-appearance: none;
     appearance: none;
 }
-.f1{padding-left:14rem;}
-.f2{padding-left:19rem;}
+.city{
+    width:50%;
+    float:left;
+}
+.p-text{
+    display:block;
+    height:6.25rem;
+    width:100%;
+    font-size:14px;
+    line-height:6.25rem;
+    /*不换行，溢出显示“。。。”*/
+    overflow:hidden;
+    text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+    -o-text-overflow:ellipsis;/* Opera 9-10 */
+    -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+    white-space: nowrap;
+}
+.f1{padding-left:12rem;}
+.f2{padding-left:15rem;}
 .f3{padding-left:8rem;}
-[data-dpr="2"].f1{padding-left:28rem;}
-[data-dpr="3"].f1{padding-left:42rem;}
-[data-dpr="2"].f2{padding-left:38rem;}
-[data-dpr="3"].f2{padding-left:57rem;}
+[data-dpr="2"].f1{padding-left:24rem;}
+[data-dpr="3"].f1{padding-left:36rem;}
+[data-dpr="2"].f2{padding-left:30rem;}
+[data-dpr="3"].f2{padding-left:45rem;}
 [data-dpr="2"].f3{padding-left:16rem;}
 [data-dpr="3"].f3{padding-left:24rem;}
 .btn{

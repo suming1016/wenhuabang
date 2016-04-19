@@ -107,7 +107,6 @@ text-align:center;
 .project-class{
     /*不换行，溢出显示“。。。”*/
     overflow:hidden;
-    /*不换行，溢出显示“。。。”*/
     text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
     -o-text-overflow:ellipsis;/* Opera 9-10 */
     -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/

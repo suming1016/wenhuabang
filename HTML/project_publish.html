@@ -93,7 +93,7 @@
         </div>
         <!-- 主体名称：-->
         <div class="in-box">
-            <div class="in-name"><span class="redF cut">*</span> 主体名称：</div>
+            <div class="in-name"><span class="redF cut">*</span>主体名称：</div>
             <input type="text" placeholder="请输入机构名称" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = '请输入机构名称';}">
         </div>
         <!--所属地区-->
@@ -101,7 +101,15 @@
             <div class="in-name"><span class="redF">*</span>所属地区：</div>
             <input type="text" placeholder="">
             <label class="select">
-                <select>
+                <select class="city">
+                    <option value="" selected="selected"></option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+                <select class="city">
                     <option value="" selected="selected"></option>
                     <option value="">1</option>
                     <option value="">2</option>
@@ -143,13 +151,15 @@
         <!--*说    明：-->
         <div class="in-box f3">
             <div class="in-name"><span class="redF">*</span>说明：</div>
-            <input type="text" placeholder="">
+            <span class="p-text"></span>
+            <!--<input type="text" placeholder="" readonly="readonly">-->
             <div class="in-mark">文字内容不少于30个字</div>
         </div>
         <!--*撮合需求描述：-->
         <div class="in-box f2">
             <div class="in-name"><span class="redF">*</span>撮合需求描述：</div>
-            <input type="text" placeholder="">
+            <!--<input type="text" placeholder="" readonly="readonly">-->
+            <span class="p-text"></span>
             <div class="in-mark">文字内容不少于30个字</div>
         </div>
         <!--*联 系 人：-->
