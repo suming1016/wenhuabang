@@ -91,6 +91,7 @@
     padding:3rem;
 }
 textarea{
+    resize:none;/*去掉textarea右下角可拖动鼠标改变textarea大小的方法*/
     width:100%;
     height:40rem;
     font-family:"苹方 常规", sans-serif;font-size:14px;text-align: justify;
