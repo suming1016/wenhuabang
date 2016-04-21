@@ -27,6 +27,9 @@
 [data-dpr="3"].top_nav{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
 [data-dpr="3"].return{left:6rem;top:4.125rem;width:8.25rem;height:8.25rem;background:url("../HTML/images/back_arrow@3x.png") no-repeat left top;}
 .top_nav input{
+    position: absolute;
+    top:0;
+    right:1rem;
     border:0 none;
     outline: none;
     background-color:#46b0d5;
