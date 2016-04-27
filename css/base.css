@@ -3,6 +3,7 @@ html{
     overflow-y:scroll;
     -webkit-text-size-adjust:100%;   /* 关闭字体大小自动调整功能*/
     -ms-text-size-adjust:100%;
+    height:100%;
 }
 
 /* 1.去除android a/input标签被点击时产生的边框 2.去除ios a标签被点击时产生的半透明灰色背景 */

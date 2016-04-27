@@ -23,14 +23,14 @@
     height:2.75rem;
     background:url("../HTML/images/back_arrow.png") no-repeat left top;
 }
-[data-dpr="2"].top_nav{height: 11rem;font-size:40px;line-height: 11rem;}
-[data-dpr="2"].return{left:4rem;top:2.75rem;width:5.5rem;height:5.5rem;background:url("../HTML/images/back_arrow@2x.png") no-repeat left top;}
-[data-dpr="3"].top_nav{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
-[data-dpr="3"].return{left:6rem;top:4.125rem;width:8.25rem;height:8.25rem;background:url("../HTML/images/back_arrow@3x.png") no-repeat left top;}
 /*注册*/
 .login{width:100%;padding:11rem 0;}
 .useId_box,.password_box,.tel_number_box{padding-left:6.25rem;border-bottom: 1px solid #46b0d5;}
-.verification_code_box{padding-right:15rem;padding-left:6.25rem;border-bottom: 1px solid #46b0d5;position:relative;background-color:#fff;}
+.verification_code_box{
+    padding-right:15rem;padding-left:6.25rem;
+    border-bottom: 1px solid #46b0d5;position:relative;
+    background-color:#fff;
+}
 .useId,
 .password,
 .password_again,
@@ -86,97 +86,7 @@
 /*.use_class dd:first-child{background-color:#46b0d5;}*/
 /*.use_class dd:last-child{background-color:#ccc;}*/
 .use_class dd:hover{cursor:pointer;}
-[data-dpr="2"].use_class{ width:32rem;height:12.5rem;padding:3.25rem 0;}
-[data-dpr="2"].use_class dd{
-    width:12rem;height:6rem;
-    float:left;
-    margin-right:4rem;
-    font-family:"苹方 常规", sans-serif;
-    font-size:24px;
-    line-height:6rem;
-    text-align:center;
-    border-radius: 4px;
-    -moz-border-radius: 4px;/*firefox*/
-    -webkit-border-radius: 4px;/*Safari and Chrome*/
-    -ms-border-radius: 4px;/*IE*/
-    -o-border-radius:4px;/*Opera*/
-}
-[data-dpr="3"].use_class{ width:48rem;height:18.75rem;padding:4.875rem 0;}
-[data-dpr="3"].use_class dd{
-    width:18rem;height:9rem;
-    float:left;
-    margin-right:6rem;
-    font-family:"苹方 常规", sans-serif;
-    font-size:36px;
-    line-height:9rem;
-    text-align:center;
-    border-radius: 6px;
-    -moz-border-radius: 6px;/*firefox*/
-    -webkit-border-radius: 6px;/*Safari and Chrome*/
-    -ms-border-radius: 6px;/*IE*/
-    -o-border-radius:6px;/*Opera*/
-}
-[data-dpr="2"].useId_box{padding-left:12.5rem;border-bottom: 2px solid #46b0d5;
-    background:url("../HTML/images/account@2x.png") no-repeat 4rem center;
-}
-[data-dpr="2"].useId{
-    height:12.5rem;line-height:6rem;
-    font-family: "SF UI Display",sans-serif;font-size:32px;
-}
-[data-dpr="2"].password_box{
-    border-bottom: 2px solid #46b0d5;padding-left:12.5rem;
-    background:#fff url("../HTML/images/password@2x.png") no-repeat 4rem center;}
-[data-dpr="2"].password{
-    height:12.5rem;line-height:6rem;
-    font-family: "SF UI Display",sans-serif;font-size:32px;
-}
-[data-dpr="2"].password_again{
-    height:12.5rem;line-height:6rem;
-    font-family: "SF UI Display",sans-serif;font-size:32px;
-}
-[data-dpr="2"].tel_number_box{background:#fff url("../HTML/images/phone@2x.png") no-repeat 4rem center;}
-[data-dpr="2"].tel_number{ height:12.5rem;line-height:6rem;
-    font-family: "SF UI Display",sans-serif;font-size:32px;}
-[data-dpr="2"].verification_code_box{padding-right:30rem;padding-left:12.5rem;border-bottom: 2px solid #46b0d5;}
-[data-dpr="2"].verification_code_box a{width:30rem;height:12.5rem;
-    font-family: "苹方 常规", sans-serif;
-    font-size:28px;
-    line-height:12.5rem;
-    color:#007aff;}
-[data-dpr="2"].verification_code{ height:12.5rem;line-height:6rem;
-    font-family: "SF UI Display",sans-serif;font-size:32px;}
-[data-dpr="3"].useId_box{padding-left:18.75rem;border-bottom: 3px solid #46b0d5;
-    background:#fff url("../HTML/images/account@3x.png") no-repeat 6rem center;
-}
-[data-dpr="3"].useId{
-    height:18.75rem;line-height:9rem;
-    font-family: "SF UI Display",sans-serif;font-size:48px;
-}
-[data-dpr="3"].password_box{
-    padding-left:18.75rem;border-bottom: 3px solid #46b0d5;
-    background:#fff url("../HTML/images/password@3x.png") no-repeat 6rem center;
-}
-[data-dpr="3"].password{
-    height:18.75rem;line-height:9rem;
-    font-family: "SF UI Display",sans-serif;font-size:48px;
-}
-[data-dpr="3"].password_again{
-    height:18.75rem;line-height:9rem;
-    font-family: "SF UI Display",sans-serif;font-size:48px;
-}
-[data-dpr="3"].tel_number_box{background:#fff url("../HTML/images/phone@3x.png") no-repeat 6rem center;}
-[data-dpr="3"].tel_number{ height:18.75rem;line-height:9rem;
-    font-family: "SF UI Display",sans-serif;font-size:48px;
-}
-[data-dpr="3"].verification_code_box{padding-right:45rem;padding-left:18.75rem;border-bottom: 3px solid #46b0d5;}
-[data-dpr="3"].verification_code_box a{width:45rem;height:18.75rem;
-    font-family: "苹方 常规", sans-serif;
-    font-size:42px;
-    line-height:18.75rem;
-    color:#007aff;}
-[data-dpr="3"].verification_code{ height:18.75rem;line-height:9rem;
-    font-family: "SF UI Display",sans-serif;font-size:48px;
-}
+
 /*注册按钮*/
 .register_submit{
     border:0 none;
@@ -204,9 +114,402 @@
     font-family:"苹方 中等", sans-serif;font-size:14px;
     color:#007aff;
 }
-[data-dpr="2"].register_submit{height:12.5rem;font-size:36px;line-height:12.5rem;margin-top:12.5rem;padding-left:2rem;}
-[data-dpr="2"].tos{font-size:28px;margin-top:2rem;}
-[data-dpr="2"].re_login{padding-right: 4rem;font-size:28px; padding-top:4rem;color:#007aff;}
-[data-dpr="3"].register_submit{height:18.75rem;font-size:54px;line-height:18.75rem;margin-top:18.75rem;padding-left:3rem;}
-[data-dpr="3"].tos{font-size:42px;margin-top:3rem;}
-[data-dpr="3"].re_login{padding-right: 6rem;font-size:42px; padding-top:6rem;color:#007aff;}
+/*设置页面*/
+.me-set{
+    padding-top:6.5rem;
+
+}
+.me-set div,.me-set dd{
+    padding:0 1rem;
+    background-color:#fff;
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+.me-set div a,.me-set dd a{
+    display:block;
+    font-size:16px;
+    color:#323232;
+    line-height:6.25rem;
+
+}
+.account-management,.account{border-top:1px solid #ccc;}
+.account-management a,.about a,.help a,.me-set dd a{
+    background:#fff url("../HTML/images/disclosure-arrow.png") no-repeat right center;
+}
+.clear span{
+    position:absolute;
+    right:1rem;
+    top:0;
+    color:#999;
+    line-height:6.25rem;
+}
+.logout{
+    border:0 none;
+    outline: none;
+    background-color:#fc2828;
+    -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+    border-radius:0;
+    -moz-border-radius: 0;/*firefox*/
+    -webkit-border-radius: 0;/*Safari and Chrome*/
+    -ms-border-radius: 0;/*IE*/
+    -o-border-radius: 0;/*Opera*/
+    height:6.25rem;width:100%;
+    color:#fff;
+    cursor: pointer;
+    margin-top:6.25rem;
+    font-family:"苹方 粗体", sans-serif;font-size:18px;line-height:6.25rem;text-align:center;
+}
+
+.picture a span img{
+    display:block;
+    width:4.25rem;
+    height:4.25rem;
+    margin-top:1rem;
+    border-radius:50%;
+    -moz-border-radius: 50%;/*firefox*/
+    -webkit-border-radius: 50%;/*Safari and Chrome*/
+    -ms-border-radius: 50%;/*IE*/
+    -o-border-radius: 50%;/*Opera*/
+    border:1px solid #ccc;
+}
+#not-bound{color:#fc2828;}
+.me-set dd a span{
+    display:block;
+    position:absolute;
+    padding-right:3rem;
+    top:0;
+    right:0;
+    color:#999;
+}
+/*关于我们*/
+.me-set dt{
+    padding:10rem 0;
+}
+.me-set dt span{
+    display:block;
+    text-align:center;
+}
+.me-set dt span img{
+   width:19.25rem;
+    height:19.25rem;
+}
+.me-set dt span sub{color:#46b0d5;margin-left:1rem;}
+.me-set dt span:nth-child(2){
+    font-family:"苹方 特粗",sans-serif;
+    font-size:24px;
+    font-weight:900;
+    line-height:5rem;
+
+}
+.score{
+    border-top:1px solid #ccc;
+}
+.me-set dt span:last-child{
+    font-size:14px;
+    color:#999;
+}
+/*data-dpr="2"*/
+@media all and(device-pixel-ratio:2),
+all and(-webkit-device-pixel-ratio:2),
+all and(-moz-device-pixel-ratio:2){
+    .top_nav{height: 11rem;font-size:40px;line-height: 11rem;}
+    .return{left:4rem;top:2.75rem;width:5.5rem;height:5.5rem;background:url("../HTML/images/back_arrow@2x.png") no-repeat left top;}
+    .use_class{ width:32rem;height:12.5rem;padding:3.25rem 0;}
+    .use_class dd{
+        width:12rem;height:6rem;
+        float:left;
+        margin-right:4rem;
+        font-family:"苹方 常规", sans-serif;
+        font-size:24px;
+        line-height:6rem;
+        text-align:center;
+        border-radius: 4px;
+        -moz-border-radius: 4px;/*firefox*/
+        -webkit-border-radius: 4px;/*Safari and Chrome*/
+        -ms-border-radius: 4px;/*IE*/
+        -o-border-radius:4px;/*Opera*/
+    }
+    .useId_box{padding-left:12.5rem;border-bottom: 2px solid #46b0d5;
+        background:#fff url("../HTML/images/account@2x.png") no-repeat 4rem center;
+    }
+    .useId{
+        height:12.5rem;line-height:6rem;
+        font-family: "SF UI Display",sans-serif;font-size:32px;
+    }
+    .password_box{
+        border-bottom: 2px solid #46b0d5;padding-left:12.5rem;
+        background:#fff url("../HTML/images/password@2x.png") no-repeat 4rem center;}
+    .password{
+        height:12.5rem;line-height:6rem;
+        font-family: "SF UI Display",sans-serif;font-size:32px;
+    }
+    .password_again{
+        height:12.5rem;line-height:6rem;
+        font-family: "SF UI Display",sans-serif;font-size:32px;
+    }
+    .tel_number_box{
+        padding-left:12.5rem;border-bottom: 2px solid #46b0d5;
+        background:#fff url("../HTML/images/phone@2x.png") no-repeat 4rem center;
+    }
+    .tel_number{ height:12.5rem;line-height:6rem;
+        font-family: "SF UI Display",sans-serif;font-size:32px;}
+    .verification_code_box{padding-right:30rem;padding-left:12.5rem;border-bottom: 2px solid #46b0d5;}
+    .verification_code_box a{width:30rem;height:12.5rem;
+        font-family: "苹方 常规", sans-serif;
+        font-size:28px;
+        line-height:12.5rem;
+        color:#007aff;}
+    .verification_code{ height:12.5rem;line-height:6rem;
+        font-family: "SF UI Display",sans-serif;font-size:32px;}
+
+    .register_submit{height:12.5rem;font-size:36px;line-height:12.5rem;margin-top:12.5rem;padding-left:2rem;}
+    .tos{font-size:28px;margin-top:2rem;}
+    .re_login{padding-right: 4rem;font-size:28px; padding-top:4rem;color:#007aff;}
+    /*设置页面*/
+    .me-set{
+        padding-top:13rem;
+    }
+    .me-set div,.me-set dd{
+        padding:0 2rem;
+        background-color:#fff;
+        border-bottom:2px solid #ccc;
+        position:relative;
+    }
+    .me-set div a,.me-set dd a{
+        display:block;
+        font-size:32px;
+        color:#323232;
+        line-height:12.5rem;
+
+    }
+    .account-management,.account{border-top:2px solid #ccc;}
+    .account-management a,.about a,.help a,.me-set dd a{
+        background:#fff url("../HTML/images/disclosure-arrow@2x.png") no-repeat right center;
+    }
+       .clear span{
+        position:absolute;
+        right:2rem;
+        top:0;
+        color:#999;
+        line-height:12.5rem;
+        font-size:32px;
+    }
+    .logout{
+        border:0 none;
+        outline: none;
+        background-color:#fc2828;
+        -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+        border-radius:0;
+        -moz-border-radius: 0;/*firefox*/
+        -webkit-border-radius: 0;/*Safari and Chrome*/
+        -ms-border-radius: 0;/*IE*/
+        -o-border-radius: 0;/*Opera*/
+        height:12.5rem;width:100%;
+        color:#fff;
+        cursor: pointer;
+        margin-top:12.5rem;
+        font-family:"苹方 粗体", sans-serif;font-size:36px;line-height:12.5rem;text-align:center;
+    }
+    .picture a span img{
+        display:block;
+        width:8.5rem;
+        height:8.5rem;
+        margin-top:2rem;
+        border-radius:50%;
+        -moz-border-radius: 50%;/*firefox*/
+        -webkit-border-radius: 50%;/*Safari and Chrome*/
+        -ms-border-radius: 50%;/*IE*/
+        -o-border-radius: 50%;/*Opera*/
+        border:2px solid #ccc;
+    }
+
+    .me-set dd a span{
+        display:block;
+        position:absolute;
+        padding-right:6rem;
+        top:0;
+        right:0;
+        color:#999;
+    }
+    /*关于我们*/
+    .me-set dt{
+        padding:20rem 0;
+    }
+    .me-set dt span{
+        display:block;
+        text-align:center;
+    }
+    .me-set dt span img{
+        width:38.50rem;
+        height:38.50rem;
+    }
+    .me-set dt span sub{color:#46b0d5;margin-left:2rem;}
+    .me-set dt span:nth-child(2){
+        font-family:"苹方 特粗",sans-serif;
+        font-size:48px;
+        font-weight:900;
+        line-height:10rem;
+
+    }
+    .score{
+        border-top:2px solid #ccc;
+    }
+    .me-set dt span:last-child{
+        font-size:28px;
+        color:#999;
+    }
+}
+/*data-dpr="3"*/
+@media all and(device-pixel-ratio:3),
+all and(-webkit-device-pixel-ratio:3),
+all and(-moz-device-pixel-ratio:3){
+    .top_nav{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
+    .return{left:6rem;top:4.125rem;width:8.25rem;height:8.25rem;background:url("../HTML/images/back_arrow@3x.png") no-repeat left top;}
+
+    .use_class{ width:48rem;height:18.75rem;padding:4.875rem 0;}
+    .use_class dd{
+        width:18rem;height:9rem;
+        float:left;
+        margin-right:6rem;
+        font-family:"苹方 常规", sans-serif;
+        font-size:36px;
+        line-height:9rem;
+        text-align:center;
+        border-radius: 6px;
+        -moz-border-radius: 6px;/*firefox*/
+        -webkit-border-radius: 6px;/*Safari and Chrome*/
+        -ms-border-radius: 6px;/*IE*/
+        -o-border-radius:6px;/*Opera*/
+    }
+    .useId_box{padding-left:18.75rem;border-bottom: 3px solid #46b0d5;
+        background:#fff url("../HTML/images/account@3x.png") no-repeat 6rem center;
+    }
+    .useId{
+        height:18.75rem;line-height:9rem;
+        font-family: "SF UI Display",sans-serif;font-size:48px;
+    }
+    .password_box{
+        padding-left:18.75rem;border-bottom: 3px solid #46b0d5;
+        background:#fff url("../HTML/images/password@3x.png") no-repeat 6rem center;
+    }
+    .password{
+        height:18.75rem;line-height:9rem;
+        font-family: "SF UI Display",sans-serif;font-size:48px;
+    }
+    .password_again{
+        height:18.75rem;line-height:9rem;
+        font-family: "SF UI Display",sans-serif;font-size:48px;
+    }
+    .tel_number_box{
+        padding-left:18.75rem;border-bottom: 3px solid #46b0d5;
+        background:#fff url("../HTML/images/phone@3x.png") no-repeat 6rem center;}
+    .tel_number{ height:18.75rem;line-height:9rem;
+        font-family: "SF UI Display",sans-serif;font-size:48px;
+    }
+    .verification_code_box{padding-right:45rem;padding-left:18.75rem;border-bottom: 3px solid #46b0d5;}
+    .verification_code_box a{width:45rem;height:18.75rem;
+        font-family: "苹方 常规", sans-serif;
+        font-size:42px;
+        line-height:18.75rem;
+        color:#007aff;}
+    .verification_code{ height:18.75rem;line-height:9rem;
+        font-family: "SF UI Display",sans-serif;font-size:48px;
+    }
+    .register_submit{height:18.75rem;font-size:54px;line-height:18.75rem;margin-top:18.75rem;padding-left:3rem;}
+    .tos{font-size:42px;margin-top:3rem;}
+    .re_login{padding-right: 6rem;font-size:42px; padding-top:6rem;color:#007aff;}
+    /*设置页面*/
+    .me-set{
+        padding-top:19.5rem;
+
+    }
+    .me-set div,.me-set dd{
+        padding:0 3rem;
+        background-color:#fff;
+        border-bottom:3px solid #ccc;
+        position:relative;
+    }
+    .me-set div a,.me-set dd a{
+        display:block;
+        font-size:48px;
+        color:#323232;
+        line-height:18.75rem;
+
+    }
+    .account-management a,.about a,.help a,.me-set dd a{
+        background:#fff url("../HTML/images/disclosure-arrow.png") no-repeat right center;
+    }
+    .account-management,.account{border-top:3px solid #ccc;}
+        .clear span{
+        position:absolute;
+        right:3rem;
+        top:0;
+        color:#999;
+        font-size:32px;
+        line-height:18.75rem;
+    }
+    .logout{
+        border:0 none;
+        outline: none;
+        background-color:#fc2828;
+        -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+        border-radius:0;
+        -moz-border-radius: 0;/*firefox*/
+        -webkit-border-radius: 0;/*Safari and Chrome*/
+        -ms-border-radius: 0;/*IE*/
+        -o-border-radius: 0;/*Opera*/
+        height:18.75rem;width:100%;
+        color:#fff;
+        cursor: pointer;
+        margin-top:18.75rem;
+        font-family:"苹方 粗体", sans-serif;font-size:54px;line-height:18.75rem;text-align:center;
+    }
+    .picture a span img{
+        display:block;
+        width:12.75rem;
+        height:12.75rem;
+        margin-top:3rem;
+        border-radius:50%;
+        -moz-border-radius: 50%;/*firefox*/
+        -webkit-border-radius: 50%;/*Safari and Chrome*/
+        -ms-border-radius: 50%;/*IE*/
+        -o-border-radius: 50%;/*Opera*/
+        border:1px solid #ccc;
+    }
+
+    .me-set dd a span{
+        display:block;
+        position:absolute;
+        padding-right:9rem;
+        top:0;
+        right:0;
+        color:#999;
+    }
+    /*关于我们*/
+    .me-set dt{
+        padding:30rem 0;
+    }
+    .me-set dt span{
+        display:block;
+        text-align:center;
+    }
+    .me-set dt span img{
+        width:57.75rem;
+        height:57.75rem;
+    }
+    .me-set dt span sub{color:#46b0d5;margin-left:3rem;}
+    .me-set dt span:nth-child(2){
+        font-family:"苹方 特粗",sans-serif;
+        font-size:72px;
+        font-weight:900;
+        line-height:15rem;
+
+    }
+    .score{
+        border-top:3px solid #ccc;
+    }
+    .me-set dt span:last-child{
+        font-size:52px;
+        color:#999;
+    }
+}

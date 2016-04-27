@@ -22,10 +22,6 @@
     height:2.75rem;
     background:url("../HTML/images/back_arrow.png") no-repeat left top;
 }
-[data-dpr="2"].top_nav{height: 11rem;font-size:40px;line-height: 11rem;}
-[data-dpr="2"].return{left:4rem;top:2.75rem;width:5.5rem;height:5.5rem;background:url("../HTML/images/back_arrow@2x.png") no-repeat left top;}
-[data-dpr="3"].top_nav{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
-[data-dpr="3"].return{left:6rem;top:4.125rem;width:8.25rem;height:8.25rem;background:url("../HTML/images/back_arrow@3x.png") no-repeat left top;}
 .top_nav input{
     position: absolute;
     top:0;
@@ -45,64 +41,86 @@
     cursor: pointer;
     font-family:"苹方 中等", sans-serif;font-size:16px;text-align:center;
 }
-[data-dpr="2"].top_nav input{
-    border:0 none;
-    outline: none;
-    background-color:#46b0d5;
-    -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
-    border-radius:0;
-    -moz-border-radius: 0;/*firefox*/
-    -webkit-border-radius: 0;/*Safari and Chrome*/
-    -ms-border-radius: 0;/*IE*/
-    -o-border-radius: 0;/*Opera*/
-    height:11rem;
-    margin-top:0;
-    color:#fff;
-    cursor: pointer;
-    font-family:"苹方 中等", sans-serif;font-size:32px;text-align:center;
-}
-[data-dpr="3"].top_nav input{
-    border:0 none;
-    outline: none;
-    background-color:#46b0d5;
-    -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
-    border-radius:0;
-    -moz-border-radius: 0;/*firefox*/
-    -webkit-border-radius: 0;/*Safari and Chrome*/
-    -ms-border-radius: 0;/*IE*/
-    -o-border-radius: 0;/*Opera*/
-    height:16.5rem;
-    margin-top:0;
-    color:#fff;
-    cursor: pointer;
-    font-family:"苹方 中等", sans-serif;font-size:48px;text-align:center;
-}
+
+
 /*description*/
 .description{
     margin-top:5.5rem;
     padding:1rem;
 }
-[data-dpr="2"].description{
-    margin-top:11rem;
-    padding:2rem;
-}
-[data-dpr="3"].description{
-    margin-top:16.5rem;
-    padding:3rem;
-}
+
+
 textarea{
     resize:none;/*去掉textarea右下角可拖动鼠标改变textarea大小的方法*/
     width:100%;
     height:40rem;
     font-family:"苹方 常规", sans-serif;font-size:14px;text-align: justify;
 }
-[data-dpr="2"]textarea{
-    width:100%;
-    height:80rem;
-    font-family:"苹方 常规", sans-serif;font-size:28px;text-align: justify;
+
+
+/*data-dpr="2"*/
+@media all and(device-pixel-ratio:2),
+all and(-webkit-device-pixel-ratio:2),
+all and(-moz-device-pixel-ratio: 2){
+    .top_nav{height: 11rem;font-size:40px;line-height: 11rem;}
+    .return{left:4rem;top:2.75rem;width:5.5rem;height:5.5rem;background:url("../HTML/images/back_arrow@2x.png") no-repeat left top;}
+
+    .top_nav input{
+        border:0 none;
+        outline: none;
+        background-color:#46b0d5;
+        -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+        border-radius:0;
+        -moz-border-radius: 0;/*firefox*/
+        -webkit-border-radius: 0;/*Safari and Chrome*/
+        -ms-border-radius: 0;/*IE*/
+        -o-border-radius: 0;/*Opera*/
+        height:11rem;
+        margin-top:0;
+        color:#fff;
+        cursor: pointer;
+        font-family:"苹方 中等", sans-serif;font-size:32px;text-align:center;
+    }
+    .description{
+        margin-top:11rem;
+        padding:2rem;
+    }
+    textarea{
+        width:100%;
+        height:80rem;
+        font-family:"苹方 常规", sans-serif;font-size:28px;text-align: justify;
+    }
 }
-[data-dpr="3"]textarea{
-    width:100%;
-    height:120rem;
-    font-family:"苹方 常规", sans-serif;font-size:42px;text-align: justify;
+/*data-dpr="3"*/
+@media all and(device-pixel-ratio:3),
+all and(-webkit-device-pixel-ratio:3),
+all and(-moz-device-pixel-ratio:3){
+    .top_nav{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
+    .return{left:6rem;top:4.125rem;width:8.25rem;height:8.25rem;background:url("../HTML/images/back_arrow@3x.png") no-repeat left top;}
+
+    .top_nav input{
+        border:0 none;
+        outline: none;
+        background-color:#46b0d5;
+        -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+        border-radius:0;
+        -moz-border-radius: 0;/*firefox*/
+        -webkit-border-radius: 0;/*Safari and Chrome*/
+        -ms-border-radius: 0;/*IE*/
+        -o-border-radius: 0;/*Opera*/
+        height:16.5rem;
+        margin-top:0;
+        color:#fff;
+        cursor: pointer;
+        font-family:"苹方 中等", sans-serif;font-size:48px;text-align:center;
+    }
+    .description{
+        margin-top:16.5rem;
+        padding:3rem;
+    }
+    textarea{
+        width:100%;
+        height:120rem;
+        font-family:"苹方 常规", sans-serif;font-size:42px;text-align: justify;
+    }
 }

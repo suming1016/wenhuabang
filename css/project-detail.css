@@ -20,7 +20,9 @@
     display:block;
     width:2.75rem;
     height:2.75rem;
-    background:url("../HTML/images/back_arrow.png") no-repeat left top;
+    background:url("../HTML/images/back_arrow@3x.png") no-repeat left top;
+    -webkit-background-size:contain;
+    background-size:contain;
 }
 .favorite{
     position:absolute;
@@ -181,22 +183,22 @@
     -webkit-transition:All 0.5s ease-in-out;
     -moz-transition:All 0.5s ease-in-out;
     -o-transition:All 0.5s ease-in-out;}
-/*@keyframes my-move*/
-/*{*/
-    /*0% {top:0;}*/
-    /*25% {top:-25rem;}*/
-    /*50% {top:-50rem;}*/
-    /*75% {top:-75rem;}*/
-    /*100% {top:-100rem;}*/
-/*}*/
-/*@-webkit-keyframes my-move !*Safari and Chrome*!*/
-/*{*/
-    /*0% {top:0;}*/
-    /*25% {top:-25rem;}*/
-    /*50% {top:-50rem;}*/
-    /*75% {top:-75rem;}*/
-    /*100% {top:-100rem;}*/
-/*}*/
+@keyframes my-move
+{
+    0% {top:0;}
+    25% {top:-25rem;}
+    50% {top:-50rem;}
+    75% {top:-75rem;}
+    100% {top:-100rem;}
+}
+@-webkit-keyframes my-move /*Safari and Chrome*/
+{
+    0% {top:0;}
+    25% {top:-25rem;}
+    50% {top:-50rem;}
+    75% {top:-75rem;}
+    100% {top:-100rem;}
+}
 
 /*project detail*/
 .note{
@@ -242,18 +244,19 @@ h3{
     padding-left:3rem;
 }
 p{
+    font-size: 14px;
     text-indent: 2em;
     line-height:3rem;
     letter-spacing:.1rem;
 }
 [data-dpr="2"]p{
-    font-size: 24px;
+    font-size: 28px;
     text-indent: 2em;
     line-height:6rem;
     letter-spacing:.2rem;
 }
 [data-dpr="2"]p{
-    font-size: 32px;
+    font-size: 42px;
     text-indent: 4em;
     line-height:9rem;
     letter-spacing:.3rem;

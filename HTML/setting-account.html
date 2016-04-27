@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
     <meta name="keywords" content="">
     <!--初始化移动端浏览显示，让网页的宽度适应设备的宽度和禁止窗口缩放-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>说明</title>
+    <title>账号管理</title>
     <!-- Set render engine for 360 browser 指定网页使用 webkit 引擎渲染，360 浏览器 6.5+ 有效-->
     <meta name="renderer" content="webkit">
     <!-- No Baidu Siteapp禁止百度移动搜索转码-->
@@ -37,18 +38,32 @@
     <script src="../js/rem.js" type="text/javascript"></script>
     <!--关联外部样式-->
     <link href="../css/base.css" rel="stylesheet" type="text/css">
-    <link href="../css/project-publish-description.css" rel="stylesheet" type="text/css">
+    <link href="../css/register.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<!--header start-->
 <div class="top_nav">
-    <a class="return"></a>项目说明
-    <input type="submit" value="确定">
+    <a class="return" href="setting.html"></a>账号管理
 </div>
-<!--header start-->
-<!--description-->
-<div class="description">
-    <textarea placeholder="内容不少于30个字" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = '内容不少于30个字';}"></textarea>
-</div>
+<dl class="me-set">
+    <dd class="account">
+        <a href="">通行证<span class="account-number">caijianguo1016@126.com</span></a>
+    </dd>
+    <dd class="picture">
+        <a href="">头像<span><img src="images/picture.png"></span></a>
+    </dd>
+    <dd class="">
+        <a href="">呢称<span class="">我到底算什么</span></a>
+    </dd>
+    <dd class="">
+    <a href="">修改密码</a>
+    </dd>
+    <dd class="">
+        <a href="">绑定手机<span class="">159****8756</span></a>
+    </dd>
+    <dd class="">
+        <a href="">绑定邮箱<span id="not-bound">未绑定</span></a>
+    </dd>
+</dl>
+
 </body>
 </html>
