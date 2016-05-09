@@ -1,0 +1,244 @@
+.use-message{
+    height:25rem;
+    background-color:#46b0d5;
+}
+
+.use-message a{
+    font-family:"苹方 常规",sans-serif;
+    font-size:18px;
+    display: block;
+    line-height:5.5rem;
+    text-align: right;
+    padding-right:1rem;
+    color:#fff;
+}
+
+.use-img{
+    width:12.5rem;
+    height:12.5rem;
+    margin:0 auto;
+    -webkit-border-radius:6.25rem;
+    -moz-border-radius:6.25rem;
+    border-radius:6.25rem;
+    background:#95e1fc url("../HTML/images/use-img.png") no-repeat center center;
+}
+
+.use-name{
+    font-family:"苹方 常规",sans-serif;
+    font-size:14px;
+    color:#fc2828;
+    text-align:center;
+    line-height:4rem;
+}
+
+
+/*my project and my favorite*/
+.me-nav{
+    height:100%;
+    background-color:#f8f8f8;
+}
+.my-project,.my-favorite{
+    font-family: "苹方 常规", sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    height:5.5rem;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    padding:0 1rem;
+    margin-top:1rem;
+    background-color:#fff;
+   }
+.my-project span:first-child{
+    float:left;
+    color:#323232;
+    display:block;
+    line-height:5.5rem;
+    padding-left:4rem;
+    background:url("../HTML/images/my-project.png") no-repeat left center;
+}
+.my-project span:last-child{
+    float:right;
+    color:#999;
+    padding-right:2rem;
+    line-height:5.5rem;
+    display:block;
+    text-align: right;
+    background:url("../HTML/images/disclosure-arrow.png") no-repeat right center;
+}
+
+.my-favorite span:first-child{
+    float:left;
+    color:#323232;
+    display:block;
+    line-height:5.5rem;
+    padding-left:4rem;
+    background:url("../HTML/images/my-favorite.png") no-repeat left center;
+}
+
+.my-favorite span:last-child{
+    float:right;
+    color:#999;
+    padding-right:2rem;
+    line-height:5.5rem;
+    display:block;
+    text-align: right;
+    background:url("../HTML/images/disclosure-arrow.png") no-repeat right center;
+}
+
+@media all and(device-pixel-ratio:2),
+all and(-webkit-device-pixel-ratio:2),
+all and(-moz-device-pixel-ratio: 2){
+    .use-message{height:50rem;background-color:#46b0d5;}
+    .use-message a{font-size:36px;display:block;text-align: right;padding-right:2rem;line-height:11rem;}
+    .use-img{
+        width:25rem;
+        height:25rem;
+        margin:0 auto;
+        -webkit-border-radius:12.5rem;
+        -moz-border-radius:12.5rem;
+        border-radius:12.5rem;
+        background:#95e1fc url("../HTML/images/use-img@2x.png") no-repeat center center;
+    }
+    .use-name{
+        font-family:"苹方 常规",sans-serif;
+        font-size:28px;
+        color:#fc2828;
+        text-align:center;
+        line-height:8rem;
+    }
+    .my-project{
+        font-family: "苹方 常规", sans-serif;
+        font-size:28px;
+        overflow:hidden;
+        height:11rem;
+        border-top:2px solid #ccc;
+        border-bottom:2px solid #ccc;
+        padding:0 2rem;
+        margin-top:2rem;
+        background-color:#fff;
+    }
+    .my-favorite{
+        font-family: "苹方 常规", sans-serif;
+        font-size:28px;
+        overflow:hidden;
+        height:11rem;
+        border-top:2px solid #ccc;
+        border-bottom:2px solid #ccc;
+        padding:0 2rem;
+        margin-top:2rem;
+        background-color:#fff;
+    }
+    .my-project span:first-child{
+        float:left;
+        color:#323232;
+        display:block;
+        line-height:11rem;
+        padding-left:8rem;
+        background:url("../HTML/images/my-project@2x.png") no-repeat left center;
+    }
+    .my-project span:last-child{
+        float:right;
+        color:#999;
+        padding-right:4rem;
+        line-height:11rem;
+        display:block;
+        text-align: right;
+        background:url("../HTML/images/disclosure-arrow@2x.png") no-repeat right center;
+    }
+    .my-favorite span:first-child{
+        float:left;
+        color:#323232;
+        display:block;
+        line-height:11rem;
+        padding-left:8rem;
+        background:url("../HTML/images/my-favorite@2x.png") no-repeat left center;
+    }
+    .my-favorite span:last-child{
+        float:right;
+        color:#999;
+        padding-right:4rem;
+        line-height:11rem;
+        display:block;
+        text-align: right;
+        background:url("../HTML/images/disclosure-arrow@2x.png") no-repeat right center;
+    }
+
+}
+@media all and(device-pixel-ratio:3),
+all and(-webkit-device-pixel-ratio:3),
+all and(-moz-device-pixel-ratio:3){
+    .use-message{height:75rem;background-color:#46b0d5;}
+    .use-message a{font-size:54px;display:block;text-align: right;padding-right:3rem;line-height:16.5rem;}
+    .use-img{
+        width:37.5rem;
+        height:37.5rem;
+        margin:0 auto;
+        -webkit-border-radius:18.75rem;
+        -moz-border-radius:18.75rem;
+        border-radius:18.75rem;
+        background:#95e1fc url("../HTML/images/use-img@3x.png") no-repeat center center;
+    }
+    .use-name{
+        font-family:"苹方 常规",sans-serif;
+        font-size:42px;
+        color:#fc2828;
+        text-align:center;
+        line-height:12rem;
+    }
+    .my-project{
+        font-family: "苹方 常规", sans-serif;
+        font-size:42px;
+        overflow:hidden;
+        height:16.5rem;
+        border-top:3px solid #ccc;
+        border-bottom:3px solid #ccc;
+        padding:0 3rem;
+        margin-top:3rem;
+        background-color:#fff;
+    }
+    .my-favorite{
+        font-family: "苹方 常规", sans-serif;
+        font-size:42px;
+        overflow:hidden;
+        height:16.5rem;
+        border-top:3px solid #ccc;
+        border-bottom:3px solid #ccc;
+        padding:0 3rem;
+        margin-top:3rem;
+        background-color:#fff;
+    }
+    .my-project span:first-child{
+        float:left;
+        color:#323232;
+        display:block;
+        line-height:16.5rem;
+        padding-left:12rem;
+        background:url("../HTML/images/my-project@3x.png") no-repeat left center;
+    }
+    .my-project span:last-child{
+        float:right;
+        color:#999;
+        padding-right:6rem;
+        line-height:16.5rem;
+        display:block;
+        text-align: right;
+        background:url("../HTML/images/disclosure-arrow@3x.png") no-repeat right center;
+    }
+    .my-favorite span:first-child{
+        float:left;
+        color:#323232;
+        display:block;
+        line-height:16.5rem;
+        padding-left:12rem;
+        background:url("../HTML/images/my-favorite@3x.png") no-repeat left center;
+    }
+    .my-favorite span:last-child{
+        float:right;
+        color:#999;
+        padding-right:6rem;
+        line-height:16.5rem;
+        display:block;
+        text-align: right;
+        background:url("../HTML/images/disclosure-arrow@3x.png") no-repeat right center;
+    }
+}

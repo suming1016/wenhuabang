@@ -1,0 +1,509 @@
+/*所有项目 列表*/
+/*header css*/
+.top_nav{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:5.5rem;
+    font-family: "苹方 中等", sans-serif;
+    font-size: 20px;
+    background-color: #46b0d5;
+    color:#fff;
+    text-align: center;
+    line-height: 5.5rem;
+    z-index: 100;
+    overflow:visible;
+}
+.return{
+    position:absolute;
+    left:2rem;
+    top:1.25rem;
+    display:block;
+    line-height:3rem;
+    font-size:16px;
+}
+/*content css*/
+.project-class-sel{
+    position:absolute;left:0;top:5.5rem;
+    background-color: #d4d4d4;
+    z-index: 1000;width:30%;
+}
+.class-selected{overflow:hidden;margin:0 auto;}
+.class1,.class2,.class3,.class4 {
+    float: left;
+    height:3rem;
+    line-height:3rem;
+    margin-right:1rem;
+}
+.del{background-color:red;display:inline-block;width:4px;}
+.class-list{overflow:hidden;}
+form{
+    float:left;width:25%;margin-top:5.5rem; height: 30px; border-bottom:1px solid #ccc;
+}
+.btn-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    font-family: "苹方 常规", sans-serif;
+
+}
+.btn-select .cur-select {
+    font-size:11px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    /*background: url("../HTML/images/option-sel@2x.png") no-repeat 125px center;*/
+    text-indent: 10px;
+    text-align:center;
+    margin-top:5px;
+    border-right:1px solid #ccc;
+}
+#btn-select4 .cur-select{
+    border-right:0 none;
+}
+.cur-select img{margin-left:5px;margin-bottom:2px;}
+.btn-select select {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    filter: alpha(opacity:0);
+    font-family: "苹方 常规", sans-serif;
+    font-size:14px;
+text-align:center;
+}
+.btn-select select option {
+    text-indent: 10px;
+}
+/*项目列表*/
+.project{position:relative;padding:1rem;border-bottom:1px solid #ccc;}
+.project img{
+    position: absolute;
+    display:block;
+    width:15rem;
+    height:15rem;
+    border-radius:2px;
+    -moz-border-radius: 2px;/*firefox*/
+    -webkit-border-radius: 2px;/*Safari and Chrome*/
+    -ms-border-radius: 2px;/*IE*/
+    -o-border-radius: 2px;/*Opera*/
+}
+.project-message{
+    overflow:hidden;
+    padding-left:16rem;
+    }
+.project-title,.project-class{
+    margin-bottom:4rem;
+}
+.project-class{
+    /*不换行，溢出显示“。。。”*/
+    overflow:hidden;
+    text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+    -o-text-overflow:ellipsis;/* Opera 9-10 */
+    -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+    white-space: nowrap;
+}
+.project-title a{
+    font-family: "苹方 中等", sans-serif;
+    font-size: 16px;
+    color: #323232;
+    display: block;
+    /*width:100px;*/
+    overflow:hidden;
+    /*不换行，溢出显示“。。。”*/
+    text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+    -o-text-overflow:ellipsis;/* Opera 9-10 */
+    -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+    white-space: nowrap;
+}
+dd span{
+    color:#999;
+    font-size:12px;
+    margin-right:2rem;
+}
+.project-price{
+    color:#323232;
+    clear:left;
+    float:left;
+}
+.share{
+    float:right;
+    width: 2rem;
+    height:2rem;
+    background: url("../HTML/images/share.png") no-repeat left top;
+}
+
+
+/*footer css*/
+.bottom_nav{
+    position:fixed;
+    left:0;
+    bottom:0;
+    height:6.125rem;
+    width: 100%;
+}
+.bottom_nav dd{
+    width:25%;
+    float: left;
+    overflow:hidden;
+
+    /*box-sizing:border-box;!*Internet Explorer、Opera 以及 Chrome *!*/
+    /*-moz-box-sizing:border-box; !* Firefox *!*/
+    /*-webkit-box-sizing:border-box; !* Safari *!*/
+}
+.bottom_nav dd a{
+    display:block;
+    width:100%;height:100%;
+    color: #ffffff;
+    text-align: center;
+    line-height:2.355rem;
+    padding-top:3.75rem;
+
+}
+.bottom_nav .recommend a{
+    margin-left:-1px;
+    border-right: #fff dashed 1px;
+    background:#c7c7cc url("../HTML/images/recommend.png") no-repeat center 1rem;
+}
+.bottom_nav .project_list a{color:#46b0d5;
+    margin-left:-1px;
+    border-right: #fff dashed 1px;
+    background:#c7c7cc url("../HTML/images/all_project_selected.png") no-repeat center 1rem;
+}
+.bottom_nav .project_publish a{
+    margin-left:-1px;
+    border-right: #fff dashed 1px;
+    background:#c7c7cc url("../HTML/images/project_publish.png") no-repeat center 1rem;
+}
+.bottom_nav .me a{
+    background:#c7c7cc url("./../HTML/images/me.png") no-repeat center 1rem;
+}
+/*[data-dpr="2"]*/
+@media all and(device-pixel-ratio:2),
+all and(-webkit-device-pixel-ratio:2),
+all and(-moz-device-pixel-ratio: 2){
+    .project-class-sel{
+        position:absolute;left:0;top:11rem;
+        background-color: #d4d4d4;
+        z-index: 1000;width:30%;
+    }
+    .class-selected{overflow:hidden;margin:0 auto;}
+    .class1,.class2,.class3,.class4 {
+        float: left;
+        height:6rem;
+        line-height:6rem;
+        margin-right:2rem;
+    }
+    .del{background-color:red;display:inline-block;width:8px;}
+    .class-list{overflow:hidden;}
+    form{
+        float:left;width:25%;margin-top:11rem; height: 60px; border-bottom:2px solid #ccc;
+    }
+    .btn-select {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 60px;
+        font-family: "苹方 常规", sans-serif;
+        font-size:22px;
+
+    }
+    .btn-select .cur-select {
+        position: absolute;
+        display: block;
+        width: 100%;
+        line-height: 40px;
+        /*background: url("../HTML/images/option-sel@2x.png") no-repeat 125px center;*/
+        text-indent: 20px;
+        text-align:center;
+        margin-top:10px;
+        border-right:2px solid #ccc;
+    }
+    #btn-select4 .cur-select{
+        border-right:0 none;
+    }
+    .cur-select img{margin-left:5px;margin-bottom:2px;}
+    .btn-select select {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        filter: alpha(opacity:0);
+        font-family: "苹方 常规", sans-serif;
+        font-size:28px;
+        text-align:center;
+    }
+    .btn-select select option {
+        text-indent: 20px;
+    }
+    /*项目列表*/
+    .project{position:relative;padding:2rem;border-bottom:2px solid #ccc;}
+    .project img{
+        position: absolute;
+        display:block;
+        width:30rem;
+        height:30rem;
+        border-radius:4px;
+        -moz-border-radius: 4px;/*firefox*/
+        -webkit-border-radius: 4px;/*Safari and Chrome*/
+        -ms-border-radius: 4px;/*IE*/
+        -o-border-radius: 4px;/*Opera*/
+    }
+    .project-message{
+        overflow:hidden;
+        padding-left:32rem;
+    }
+    .project-title,.project-class{
+        margin-bottom:8rem;
+    }
+    .project-class{
+        /*不换行，溢出显示“。。。”*/
+        overflow:hidden;
+        text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+        -o-text-overflow:ellipsis;/* Opera 9-10 */
+        -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+        white-space: nowrap;
+    }
+    .project-title a{
+        font-family: "苹方 中等", sans-serif;
+        font-size: 32px;
+        color: #323232;
+        display: block;
+        /*width:100px;*/
+        overflow:hidden;
+        /*不换行，溢出显示“。。。”*/
+        text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+        -o-text-overflow:ellipsis;/* Opera 9-10 */
+        -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+        white-space: nowrap;
+    }
+    dd span{
+        color:#999;
+        font-size:24px;
+        margin-right:4rem;
+    }
+    .project-price{
+        color:#323232;
+        font-size:24px;
+        clear:left;
+        float:left;
+    }
+    .share{
+        float:right;
+        width: 4rem;
+        height:4rem;
+        background: url("../HTML/images/share@2x.png") no-repeat left top;
+    }
+
+
+    /*footer css*/
+    .top_nav{height: 11rem;font-size:40px;line-height: 11rem;}
+    .return{left:4rem;top:2.5rem;line-height:6rem;font-size:32px;}
+    .bottom_nav{height:12.25rem;}
+    .bottom_nav dd a{padding-top:7.5rem;font-size: 24px;line-height:4.75rem;}
+    .bottom_nav .recommend a{
+        margin-left:-2px;
+        border-right: #fff dashed 2px;
+        background:#c7c7cc url("../HTML/images/recommend@2x.png") no-repeat center 2rem;}
+    .bottom_nav .project_list a{
+        margin-left:-2px;
+        border-right: #fff dashed 2px;
+        color:#46b0d5;
+        background:#c7c7cc url("../HTML/images/all_project_selected@2x.png") no-repeat center 2rem;}
+    .bottom_nav .project_publish a{
+        margin-left:-2px;
+        border-right: #fff dashed 2px;
+        background:#c7c7cc url("../HTML/images/project_publish@2x.png") no-repeat center 2rem;}
+    .bottom_nav .me a{background:#c7c7cc url("../HTML/images/me@2x.png") no-repeat center 2rem;}
+    .recommend_list_time{margin:0 2rem;}
+    .recommend_list_time .time{
+        font-size:24px;
+        padding-left:42px;
+        line-height: 32px;
+        background-image: url("../HTML/images/time@2x.png");
+    }
+    .recommend_list_time .collection{
+        width: 4rem;
+        height:4rem;
+        background: url("../HTML/images/collection@2x.png") no-repeat left top;
+    }
+    .recommend_list_time .share{
+        margin-right:2rem;
+        width: 4rem;
+        height:4rem;
+        background: url("../HTML/images/share@2x.png") no-repeat left top;
+    }
+}
+/*[data-dpr="3"]*/
+@media all and(device-pixel-ratio:3),
+all and(-webkit-device-pixel-ratio:3),
+all and(-moz-device-pixel-ratio: 3){
+    .project-class-sel{
+        position:absolute;left:0;top:16.5rem;
+        background-color: #d4d4d4;
+        z-index: 1000;width:30%;
+    }
+    .class-selected{overflow:hidden;margin:0 auto;}
+    .class1,.class2,.class3,.class4 {
+        float: left;
+        height:9rem;
+        line-height:9rem;
+        margin-right:3rem;
+    }
+    .del{background-color:red;display:inline-block;width:12px;}
+    .class-list{overflow:hidden;}
+    form{
+        float:left;width:25%;margin-top:16.5rem; height: 90px; border-bottom:3px solid #ccc;
+    }
+    .btn-select {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 90px;
+        font-family: "苹方 常规", sans-serif;
+        font-size:33px;
+
+    }
+    .btn-select .cur-select {
+        position: absolute;
+        display: block;
+        width: 100%;
+        line-height: 60px;
+        /*background: url("../HTML/images/option-sel@2x.png") no-repeat 125px center;*/
+        text-indent: 60px;
+        text-align:center;
+        margin-top:15px;
+        border-right:3px solid #ccc;
+    }
+    #btn-select4 .cur-select{
+        border-right:0 none;
+    }
+    .cur-select img{margin-left:15px;margin-bottom:6px;}
+    .btn-select select {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        filter: alpha(opacity:0);
+        font-family: "苹方 常规", sans-serif;
+        font-size:42px;
+        text-align:center;
+    }
+    .btn-select select option {
+        text-indent: 30px;
+    }
+    /*项目列表*/
+    .project{position:relative;padding:3rem;border-bottom:3px solid #ccc;}
+    .project img{
+        position: absolute;
+        display:block;
+        width:45rem;
+        height:45rem;
+        border-radius:6px;
+        -moz-border-radius: 6px;/*firefox*/
+        -webkit-border-radius: 6px;/*Safari and Chrome*/
+        -ms-border-radius: 6px;/*IE*/
+        -o-border-radius: 6px;/*Opera*/
+    }
+    .project-message{
+        overflow:hidden;
+        padding-left:48rem;
+    }
+    .project-title,.project-class{
+        margin-bottom:12rem;
+    }
+    .project-class{
+        /*不换行，溢出显示“。。。”*/
+        overflow:hidden;
+        text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+        -o-text-overflow:ellipsis;/* Opera 9-10 */
+        -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+        white-space: nowrap;
+    }
+    .project-title a{
+        font-family: "苹方 中等", sans-serif;
+        font-size: 48px;
+        color: #323232;
+        display: block;
+        /*width:100px;*/
+        overflow:hidden;
+        /*不换行，溢出显示“。。。”*/
+        text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+        -o-text-overflow:ellipsis;/* Opera 9-10 */
+        -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+        white-space: nowrap;
+    }
+    dd span{
+        color:#999;
+        font-size:36px;
+        margin-right:6rem;
+    }
+    .project-price{
+        color:#323232;
+        font-size:36px;
+        clear:left;
+        float:left;
+    }
+    .share{
+        float:right;
+        width: 6rem;
+        height:6rem;
+        background: url("../HTML/images/share@3x.png") no-repeat left top;
+    }
+
+
+    /*footer css*/
+    .top_nav{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
+    .return{left:6rem;top:3.75rem;line-height:9rem;font-size:48px;}
+
+    .bottom_nav{height:18.375rem;}
+    .bottom_nav dd a{
+        padding-top:11.25rem;
+        font-size: 36px;
+        line-height:7.125rem;
+    }
+    .bottom_nav .recommend a{
+        border-right: #fff dashed 3px;
+        margin-left:-3px;
+        background:#c7c7cc url("../HTML/images/recommend@3x.png") no-repeat center 1.5rem;
+    }
+    .bottom_nav .project_list a{
+        margin-left:-3px;
+        border-right: #fff dashed 3px;
+        color:#46b0d5;
+        background:#c7c7cc url("../HTML/images/all_project_selected@3x.png") no-repeat center 1.5rem;
+    }
+    .bottom_nav .project_publish a{
+        border-right: #fff dashed 3px;
+        margin-left:-3px;
+        background:#c7c7cc url("../HTML/images/project_publish@3x.png") no-repeat center 1.5rem;
+    }
+    .bottom_nav .me a{
+        background:#c7c7cc url("../HTML/images/me@3x.png") no-repeat center 1.5rem;
+    }
+    .recommend_list_time{margin:0 3rem;}
+    .recommend_list_time .time{
+        font-size:36px;
+        padding-left:58px;
+        line-height: 48px;
+        background-image: url("../HTML/images/time@3x.png");
+    }
+    .recommend_list_time .collection{
+
+        width: 6rem;
+        height:6rem;
+        background: url("../HTML/images/collection@3x.png") no-repeat left top;
+    }
+    .recommend_list_time .share{
+        margin-right:3rem;
+        width:6rem;
+        height:6rem;
+        background: url("../HTML/images/share@3x.png") no-repeat left top;
+    }
+}

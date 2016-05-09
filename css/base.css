@@ -1,0 +1,28 @@
+html{
+    font-family: "SF UI Text", "SF UI Display", "苹方 常规", "苹方 中等", "苹方 粗体", sans-serif;
+    overflow-y:scroll;
+    -webkit-text-size-adjust:100%;   /* 关闭字体大小自动调整功能*/
+    -ms-text-size-adjust:100%;
+    height:100%;
+}
+
+/* 1.去除android a/input标签被点击时产生的边框 2.去除ios a标签被点击时产生的半透明灰色背景 */
+a,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+a{text-decoration:none;}
+a:hover{
+    text-decoration:none;
+    cursor:pointer;
+}
+img{margin:0;}
+body {
+    min-width: 320px;   /*有些安卓系统自带的浏览器并不支持user-scalable=no(不给缩放)这一条规则，能够对页面进行放大，
+                             一旦放大响应的 box 也随之放大，导致页面出现错乱问题，解决方法：定义页面的最小宽度*/
+    margin: 0;          /*css reset*/
+/*background-color: #46b0d5;*/
+    background-color:#f8f8f8;
+    min-height:100%;
+}
+
+
+
+

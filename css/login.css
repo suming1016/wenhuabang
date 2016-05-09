@@ -1,0 +1,310 @@
+/*登录页样式*/
+/*导航条*/
+.top_nav{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:5.5rem;
+    font-family: "苹方 中等", sans-serif;
+    font-size: 20px;
+    background-color: #46b0d5;
+    color:#fff;
+    text-align: center;
+    line-height: 5.5rem;
+}
+.return{
+    position:absolute;
+    left:2rem;
+    top:1.375rem;
+    display:block;
+    width:2.75rem;
+    height:2.75rem;
+    background:url("../HTML/images/back_arrow.png") no-repeat left top;
+}
+
+/*登录*/
+/*图标*/
+
+.login{width:100%;padding:11rem 0;}
+.app_login_img{
+    width:6rem;
+    height:6rem;
+    margin:0 auto 5.5rem;}
+.app_login_img img{width:100%;height:100%;}
+
+/*用户名、密码*/
+.useId_box,.password_box{padding-left:6.25rem;border-bottom: 1px solid #46b0d5;}
+.useId,.password_box input{
+    width:100%;
+    border-radius:0;
+    -moz-border-radius: 0;/*firefox*/
+    -webkit-border-radius: 0;/*Safari and Chrome*/
+    -ms-border-radius: 0;/*IE*/
+    -o-border-radius: 0;/*Opera*/
+    border: none;
+    height:6.25rem;
+    font-family: "SF UI Text",sans-serif;
+    font-size:16px;
+    line-height:3rem;
+}
+.useId_box{background:#fff url("../HTML/images/account.png") no-repeat 2rem center;}
+.password_box{background:#fff url("../HTML/images/password.png") no-repeat 2rem center;}
+.password_forget{
+    font-family:"苹方 常规", sans-serif;
+    font-size:12px;
+    line-height:2.5rem;
+    padding:1rem 1rem;
+}
+.checkbox{width:1.5rem;height:1.5rem;margin:0.25rem 0.25rem 0.25rem 0;}
+.password_forgot{text-align:right;float:right;display:block;color:#fb2a2f;}
+/*btn*/
+.login_submit{
+    border:0 none;
+    outline: none;
+    background-color:#46b0d5;
+    -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+    border-radius:0;
+    -moz-border-radius: 0;/*firefox*/
+    -webkit-border-radius: 0;/*Safari and Chrome*/
+    -ms-border-radius: 0;/*IE*/
+    -o-border-radius: 0;/*Opera*/
+    height:6.25rem;width:100%;
+    color:#fff;
+    cursor: pointer;
+    font-family:"苹方 粗体", sans-serif;font-size:18px;line-height:6.25rem;text-align:center;
+}
+.register{text-align:center;font-size:14px;margin-top:1rem;}
+.register a{color:#46b0d5;}
+
+/*找回密码*/
+.request-password{margin-top:5.5rem;padding:0 1rem;}
+.request-password-mode{
+    display:block;
+    height:6.25rem;
+    color:#007aff;
+    font-size:16px;
+    line-height:6.25rem;
+    border-bottom:1px solid #ccc;
+    background:url("../HTML/images/right_arrow.png") no-repeat right center;
+}
+/*2*/
+.request-password-byPhone{
+    margin-top:5.5rem;
+}
+p{
+    margin-top:5rem;
+    font-size:14px;
+    text-align: center;
+    color:#666;
+}
+h2{
+    font-size:18px;
+    font-weight:500;
+    line-height:4rem;
+    text-align: center;
+    color:#007aff;
+}
+.request{
+    margin-top:5rem;
+}
+.request-otherMode{
+    color:#007aff;
+    padding-right:1rem;
+    text-align:right;
+    margin-top:2rem;
+    font-size:14px;
+}
+/*修改密码*/
+.reset-password{
+    margin-top:5.5rem;
+}
+.reset{margin-top:5rem;}
+.verification_code_box{
+    padding-right:15rem;padding-left:6.25rem;
+    border-bottom: 1px solid #46b0d5;position:relative;
+    background-color:#fff;
+}
+.verification_code{
+    width:100%;
+    border-radius:0;
+    -moz-border-radius: 0;/*firefox*/
+    -webkit-border-radius: 0;/*Safari and Chrome*/
+    -ms-border-radius: 0;/*IE*/
+    -o-border-radius: 0;/*Opera*/
+    border: none;
+    height:6.25rem;
+    font-family: "SF UI Text",sans-serif;
+    font-size:16px;
+    line-height:3rem;
+}
+.verification_code_box a{
+    display:block;
+    position:absolute;right:0;top:0;
+    width:15rem;height:6.25rem;
+    font-family: "苹方 常规", sans-serif;
+    font-size:14px;
+    line-height:6.25rem;
+    color:#007aff;
+    text-align:center;
+}
+@media all and(device-pixel-ratio:2),
+all and(-webkit-device-pixel-ratio:2),
+all and(-moz-device-pixel-ratio: 2){
+    .top_nav{
+        height: 11rem;font-size:40px;line-height: 11rem;
+    }
+    .return{
+        left:4rem;top:2.75rem;width:5.5rem;height:5.5rem;background:url("../HTML/images/back_arrow@2x.png") no-repeat left top;
+    }
+    .app_login_img{
+        width:12rem;
+        height:12rem;
+    }
+    .login{padding:22rem 0;}
+    .useId_box{
+        padding-left:12.5rem;border-bottom: 2px solid #46b0d5;
+        background:#FFF url("../HTML/images/account@2x.png") no-repeat 4rem center;
+    }
+    .useId{
+        height:12.5rem;line-height:6rem;
+        font-family: "SF UI Display",sans-serif;font-size:32px;
+    }
+    .password_box{
+        border-bottom: 2px solid #46b0d5;padding-left:12.5rem;
+        background:#fff url("../HTML/images/password@2x.png") no-repeat 4rem center;
+    }
+    .password_box input{
+        height:12.5rem;line-height:6rem;
+        font-family: "SF UI Display",sans-serif;font-size:32px;
+    }
+    .password_forget{
+        font-family:"苹方 常规", sans-serif;font-size:24px;padding:2rem 2rem;line-height:5rem;
+    }
+    .checkbox{
+        width:3rem;height:3rem;margin:0.5rem 0.5rem 0.5rem 0;
+    }
+    .login_submit{
+        height:12.5rem;font-size:36px;line-height:12.5rem;
+    }
+    .register{
+        font-size:28px;margin-top:2rem;
+    }
+    /*找回密码*/
+    .request-password{margin-top:11rem;padding:0 2rem;}
+    .request-password-mode{
+        display:block;
+        height:12.5rem;
+        color:#007aff;
+        font-size:32px;
+        line-height:12.5rem;
+        border-bottom:2px solid #ccc;
+        background:url("../HTML/images/right_arrow@2x.png") no-repeat right center;
+    }
+    /*2*/
+    .request-password-byPhone{
+        margin-top:11rem;
+    }
+    p{
+        margin-top:10rem;
+        font-size:28px;
+        text-align: center;
+        color:#666;
+    }
+    h2{
+        font-size:36px;
+        font-weight:500;
+        line-height:8rem;
+        text-align: center;
+        color:#007aff;
+    }
+    .request{
+        margin-top:10rem;
+    }
+    .request-otherMode{
+        color:#007aff;
+        padding-right:2rem;
+        text-align:right;
+        margin-top:4rem;
+        font-size:28px;
+    }
+    /*修改密码*/
+    .reset-password{
+        margin-top:11rem;
+    }
+    .reset{margin-top:10rem;}
+}
+@media all and(device-pixel-ratio:3),
+all and(-webkit-device-pixel-ratio:3),
+all and(-moz-device-pixel-ratio:3){
+    .login{padding:33rem 0;}
+    .top_nav{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
+    .return{left:6rem;top:4.125rem;width:8.25rem;height:8.25rem;background:url("../HTML/images/back_arrow@3x.png") no-repeat left top;}
+    .app_login_img{
+        width:18rem;
+        height:18rem;
+    }
+
+    .useId_box{
+        padding-left:18.75rem;border-bottom: 3px solid #46b0d5;
+        background:#fff url("../HTML/images/account@3x.png") no-repeat 6rem center;
+    }
+    .useId{
+        height:18.75rem;line-height:9rem;
+        font-family: "SF UI Display",sans-serif;font-size:48px;
+    }
+    .password_box{
+        padding-left:18.75rem;border-bottom: 3px solid #46b0d5;
+        background:#fff url("../HTML/images/password@3x.png") no-repeat 6rem center;
+    }
+    .password_box input{
+        height:18.75rem;line-height:9rem;
+        font-family: "SF UI Display",sans-serif;font-size:48px;
+    }
+    .password_forget{font-family:"苹方 常规", sans-serif;font-size:36px;padding:3rem 3rem;line-height:7.5rem;}
+    .checkbox{width:4.5rem;height:4.5rem;margin:0.75rem 0.75rem 0.75rem 0;}
+    .login_submit{height:18.75rem;font-size:54px;line-height:18.75rem;}
+    .register{font-size:42px;margin-top:3rem;}
+    .request-password{margin-top:16.5rem;padding:0 3rem;}
+    .request-password-mode{
+        display:block;
+        height:18.75rem;
+        color:#007aff;
+        font-size:48px;
+        line-height:18.75rem;
+        border-bottom:3px solid #ccc;
+        background:url("../HTML/images/right_arrow@3x.png") no-repeat right center;
+    }
+    /*2*/
+    .request-password-byPhone{
+        margin-top:16.5rem;
+    }
+    p{
+        margin-top:15rem;
+        font-size:42px;
+        text-align: center;
+        color:#666;
+    }
+    h2{
+        font-size:54px;
+        font-weight:500;
+        line-height:12rem;
+        text-align: center;
+        color:#007aff;
+    }
+    .request{
+        margin-top:15rem;
+    }
+    .request-otherMode{
+        color:#007aff;
+        padding-right:3rem;
+        text-align:right;
+        margin-top:6rem;
+        font-size:42px;
+    }
+    /*修改密码*/
+    .reset-password{
+        margin-top:16.5rem;
+    }
+    .reset{margin-top:15rem;}
+}

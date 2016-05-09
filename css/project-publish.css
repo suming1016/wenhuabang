@@ -1,0 +1,415 @@
+/*header css*/
+.top_nav{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:5.5rem;
+    font-family: "苹方 中等", sans-serif;
+    font-size: 20px;
+    background-color: #46b0d5;
+    color:#fff;
+    text-align: center;
+    line-height: 5.5rem;
+    z-index: 100;
+    overflow:visible;
+}
+.return{
+    position:absolute;
+    left:2rem;
+    top:1.25rem;
+    display:block;
+    line-height:3rem;
+    font-size:16px;
+}
+
+/*content*/
+.content{
+    padding:0 1rem 10rem;
+}
+p{margin-top:5.5rem;font-size:14px;line-height:3rem;text-align:right;}
+.img-box{
+    overflow:scroll;
+}
+.p-images{
+    margin-top:5.5rem;
+    padding:2rem;
+    white-space: nowrap;
+}
+.p-images img{
+    width:12.5rem;
+    margin-right:2rem;
+    display: inline-block;
+}
+.redF{color:#fff;}
+.in-box{
+    position: relative;
+    border-top:1px solid #ccc;
+
+    padding-left:9rem;
+    background-color:#fff;
+
+}
+
+.in-name{
+    position: absolute;
+    left:0;
+    top:0;
+    font-size:14px;
+    height:6.25rem;
+    line-height:6.25rem;
+    z-index:10;
+}
+
+.in-box input{
+    border:0 none;
+    outline: none;
+    -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    height:6.25rem;
+    width:100%;
+    font-size:14px;
+ }
+.cut{color:#fff;}
+.in-sel,.in-mark{
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:14px;
+    color:#999;
+    line-height:5.5rem;
+    padding-right:1rem;
+}
+.in-sel{
+    padding-right:3rem;
+    background:url("../HTML/images/disclosure-arrow.png") no-repeat 6rem center;
+}
+.select{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+select{
+
+    width:100%;
+    height:6.25rem;
+    /*z-index: 100;*/
+    border:0 none;
+    padding-left:9rem;
+    line-height:6.25rem;
+    font-size:14px;
+    /*删除select默认样式*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /*删除右侧三角*/
+    appearance: none;
+}
+.city{
+    width:50%;
+    float:left;
+    text-align: center;
+}
+.city:last-child{
+    padding-left:0;
+}
+.city option:first-child{
+    color:#ccc;
+}
+.p-text{
+    display:block;
+    height:6.25rem;
+    width:100%;
+    font-size:14px;
+    line-height:6.25rem;
+    /*不换行，溢出显示“。。。”*/
+    overflow:hidden;
+    text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+    -o-text-overflow:ellipsis;/* Opera 9-10 */
+    -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+    white-space: nowrap;
+}
+.f1{padding-left:12rem;}
+.f2{padding-left:15rem;}
+.f3{padding-left:8rem;}
+
+.btn{
+    border:0 none;
+    outline: none;
+    background-color:#46b0d5;
+    -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+    border-radius:0;
+    -moz-border-radius: 0;/*firefox*/
+    -webkit-border-radius: 0;/*Safari and Chrome*/
+    -ms-border-radius: 0;/*IE*/
+    -o-border-radius: 0;/*Opera*/
+    height:6.25rem;width:100%;
+    color:#fff;
+    cursor: pointer;
+    margin-top:6.25rem;
+    font-family:"苹方 粗体", sans-serif;font-size:18px;line-height:6.25rem;text-align:center;
+}
+/*data-dpr="2"*/
+@media all and(device-pixel-ratio:2),
+all and(-webkit-device-pixel-ratio:2),
+all and(-moz-device-pixel-ratio: 2){
+    .content{
+        padding:0 2rem 20rem;
+    }
+    .top_nav{height: 11rem;font-size:40px;line-height: 11rem;}
+    .return{left:4rem;top:2.5rem;line-height:6rem;}
+
+    p{margin-top:11rem;font-size:28px;line-height:6rem;}
+    .img-box{
+        overflow:scroll;
+    }
+    .p-images{
+        margin-top:11rem;
+        padding:4rem;
+        white-space: nowrap;
+    }
+    .p-images img{
+        width:25rem;
+        margin-right:4rem;
+        display: inline-block;
+    }
+    .in-box{
+        position: relative;
+        border-top:2px solid #ccc;
+        border-bottom:2px solid #ccc;
+        padding-left:18rem;
+        background-color:#fff;
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+
+    .in-name{
+        position: absolute;
+        left:0;
+        top:0;
+        font-size:28px;
+        height:12.5rem;
+        line-height:12.5rem;
+    }
+
+    .in-box input{
+        border:0 none;
+        outline: none;
+        -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+        -webkit-border-radius:0;
+        -moz-border-radius:0;
+        border-radius:0;
+        height:12.5rem;
+        width:100%;
+        font-size:28px;
+    }
+    .in-sel{
+        position:absolute;
+        top:0;
+        right:0;
+        font-size:28px;
+        color:#999;
+        line-height:11rem;
+        padding-right:6rem;
+        background:url("../HTML/images/disclosure-arrow@2x.png") no-repeat 12rem center;
+    }
+    .in-mark{
+        position:absolute;
+        top:0;
+        right:0;
+        font-size:28px;
+        color:#999;
+        line-height:11rem;
+        padding-right:2rem;
+    }
+    select{
+        width:100%;
+        height:12.5rem;
+        font-size:28px;
+        border:0 none;
+        padding-left:18rem;
+        line-height:12.5rem;
+        /*删除select默认样式*/
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    .city{
+        width:50%;
+        float:left;
+        text-align: center;
+    }
+    .city:last-child{
+        padding-left:0;
+    }
+    .city option:first-child{
+        color:#ccc;
+    }
+    .p-text{
+        display:block;
+        height:12.5rem;
+        width:100%;
+        font-size:28px;
+        line-height:12.5rem;
+        /*不换行，溢出显示“。。。”*/
+        overflow:hidden;
+        text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+        -o-text-overflow:ellipsis;/* Opera 9-10 */
+        -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+        white-space: nowrap;
+    }
+    .f1{padding-left:24rem;}
+    .f2{padding-left:30rem;}
+    .f3{padding-left:16rem;}
+    .btn{
+        border:0 none;
+        outline: none;
+        background-color:#46b0d5;
+        -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+        border-radius:0;
+        -moz-border-radius: 0;/*firefox*/
+        -webkit-border-radius: 0;/*Safari and Chrome*/
+        -ms-border-radius: 0;/*IE*/
+        -o-border-radius: 0;/*Opera*/
+        height:12.5rem;width:100%;
+        color:#fff;
+        cursor: pointer;
+        margin-top:12.5rem;
+        font-family:"苹方 粗体", sans-serif;font-size:36px;line-height:12.5rem;text-align:center;
+    }
+}
+/*data-dpr="3"*/
+@media all and(device-pixel-ratio:3),
+all and(-webkit-device-pixel-ratio:3),
+all and(-moz-device-pixel-ratio: 3){
+    .content{
+        padding:0 3rem 30rem;
+    }
+    .top_nav{height: 16.5rem;font-size:60px;line-height: 16.5rem;}
+    .return{left:6rem;top:3.75rem;line-height:9rem;}
+    .img-box{
+        overflow:scroll;
+    }
+    .p-images{
+        margin-top:16.5rem;
+        padding:6rem;
+        white-space: nowrap;
+    }
+    .p-images img{
+        width:37.5rem;
+        margin-right:6rem;
+        display: inline-block;
+    }
+    p{margin-top:16.5rem;font-size:42px;line-height:9rem;}
+    .in-box{
+        position: relative;
+        border-top:3px solid #ccc;
+        border-bottom:3px solid #ccc;
+        padding-left:27rem;
+        background-color:#fff;
+        margin-top:3rem;
+        margin-bottom:3rem;
+    }
+    .in-name{
+        position: absolute;
+        left:0;
+        top:0;
+        font-size:42px;
+        height:18.75rem;
+        line-height:18.75rem;
+    }
+    .in-box input{
+        border:0 none;
+        outline: none;
+        -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+        -webkit-border-radius:0;
+        -moz-border-radius:0;
+        border-radius:0;
+        height:18.75rem;
+        width:100%;
+        font-size:42px;
+        /*不换行，溢出显示“。。。”*/
+        overflow:hidden;
+        text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+        -o-text-overflow:ellipsis;/* Opera 9-10 */
+        -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+        white-space: nowrap;
+    }
+    .in-sel{
+        position:absolute;
+        top:0;
+        right:0;
+        font-size:42px;
+        color:#999;
+        line-height:16.5rem;
+        padding-right:9rem;
+        background:url("../HTML/images/disclosure-arrow@3x.png") no-repeat 18rem center;
+    }
+    .in-mark{
+        position:absolute;
+        top:0;
+        right:0;
+        font-size:42px;
+        color:#999;
+        line-height:16.5rem;
+        padding-right:3rem;
+    }
+    select{
+        width:100%;
+        height:18.75rem;
+        /*z-index: 100;*/
+        border:0 none;
+        padding-left:27rem;
+        font-size:42px;
+        line-height:18.75rem;
+        /*删除select默认样式*/
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    .city{
+        width:50%;
+        float:left;
+        text-align: center;
+    }
+    .city:last-child{
+        padding-left:0;
+    }
+    .city option:first-child{
+        color:#ccc;
+    }
+    .p-text{
+        display:block;
+        height:18.75rem;
+        width:100%;
+        font-size:42px;
+        line-height:18.75rem;
+        /*不换行，溢出显示“。。。”*/
+        overflow:hidden;
+        text-overflow:ellipsis;/* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 *//*不支持Firefox*/
+        -o-text-overflow:ellipsis;/* Opera 9-10 */
+        -moz-binding:url("../xml/ellipsis.xml#ellipsis");/*firefox通过XUL实现text-overflow:ellipsis的效果*/
+        white-space: nowrap;
+    }
+    .f1{padding-left:36rem;}
+    .f2{padding-left:45rem;}
+    .f3{padding-left:24rem;}
+    .btn{
+        border:0 none;
+        outline: none;
+        background-color:#46b0d5;
+        -webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+        border-radius:0;
+        -moz-border-radius: 0;/*firefox*/
+        -webkit-border-radius: 0;/*Safari and Chrome*/
+        -ms-border-radius: 0;/*IE*/
+        -o-border-radius: 0;/*Opera*/
+        height:18.75rem;width:100%;
+        color:#fff;
+        cursor: pointer;
+        margin-top:18.75rem;
+        font-family:"苹方 粗体", sans-serif;font-size:54px;line-height:18.75rem;text-align:center;
+    }
+}
